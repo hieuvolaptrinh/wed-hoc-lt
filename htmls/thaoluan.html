@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
+    />
+    <!-- google font đẹp  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.go1ogleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- logo  -->
+    <link rel="shortcut icon" href="../img/lo.png" />
+    <!-- tabler icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- link boostrap vào để làm cho nhanh với lại là responsivie cho nó khỏe -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/form-dk.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Lập Trình Tương Lai Của Bạn</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href=""
+          ><img class="logo" src="../img/lo.png" alt=""
+        /></a>
+
+        <!-- sử dụng để reponsive kéo ngắn lại -->
+        <button
+          class="navbar-toggler mf-auto"
+          data-bs-toggle="collapse"
+          data-bs-target="#open"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Kết hợp hai class "collapse" và "navbar-collapse" lại với nhau, phần tử sẽ có khả năng thu gọn và mở rộng, 
+                cũng như định dạng phù hợp với giao diện của thanh điều hướng (navbar) trong Bootstrap. -->
+
+        <div class="collapse navbar-collapse" id="open">
+          <ul class="navbar-nav me-auto">
+            <!-- class nav-link để nó cách ra các điều hướng -->
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link"
+                >trang chủ <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="khoahoc.html" class="nav-link"
+                >Khóa học <i class="fa-solid fa-graduation-cap"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="tintuc.html" class="nav-link"
+                >tin công nghệ <i class="fa-solid fa-newspaper"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" style="color: white"
+                >thảo luận <i class="fa-solid fa-comment-dots fa-bounce"></i
+              ></a>
+            </li>
+            <!--mở rộng ra -->
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                rode="button"
+                data-bs-toggle="dropdown"
+                >liên hệ <i class="fa-solid fa-users"></i
+              ></a>
+              <!-- ata-bs-toggle="dropdown" để có thể ấn vào nó hiện xuống -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="https://www.facebook.com/HieuVo.trumut"
+                    target="_blank">facebook
+                    <i
+                      class="fa-brands fa-square-facebook fa-beat fa-xl"
+                      style="color: #052cf0"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.youtube.com/channel/UCUsFH934fJws3QvETm8-i-A"
+                    target="_blank">youtube
+                    <i
+                      class="fa-brands fa-youtube fa-beat fa-xl"
+                      style="color: #ff0000"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.facebook.com/HieuVo.trumut"
+                    >instagram
+                    <i
+                      class="fa-brands fa-square-instagram fa-rotate-180 fa-xl fa-beat"
+                      style="color: #ff6600"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="form d-flex">
+            <button class="btn btn-dk btn-primary me-2 js-dk" type="button">
+              ĐĂNG KÍ
+            </button>
+            <button class="btn btn-dn btn-primary me-2 js-dk" type="button">
+              ĐĂNG NHẬP
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="wrapper-slider">
+        <div id="slide">
+          <div class="item">
+            <video autoplay muted loop class="bg-video">
+              <source src="../videos/slider-2.mp4" type="video/mp4" />
+            </video>
+            <div class="content">
+              <h2 class="name">LẬP TRÌNH TƯƠNG LAI</h2>
+              <p class="des">"Kiến thức là hạt giống của hạnh phúc.”</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="item">
+            <video autoplay muted loop class="bg-video">
+              <source src="../videos/slider-internet.mp4" type="video/mp4" />
+            </video>
+            <div class="content">
+              <h2 class="name">KẾT NỐI CỘNG ĐỒNG</h2>
+              <p class="des">"Thành công không đến với kẻ lười biến"</p>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="item">
+            <video autoplay muted loop class="bg-video">
+              <source src="../videos/slide-1.mp4" type="video/mp4" />
+            </video>
+            <div class="content">
+              <h2 class="name">CHIA SẼ KIẾN THỨC</h2>
+              <p class="des">
+                "Nếu bạn chưa từng giám theo đuổi ước mơ. <br />
+                Thì bạn sẽ không bao giờ có được nó"
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="item">
+            <video autoplay muted loop class="bg-video">
+              <source src="../videos/slider-3.mp4" type="video/mp4" />
+            </video>
+            <div class="content">
+              <h2 class="name">KẾT NỐI CỘNG ĐỒNG</h2>
+              <p class="des">“Học tập là hạt giống của kiến thức" <br /></p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="item">
+            <video autoplay muted loop class="bg-video">
+              <source src="../videos/slider-time.mp4" type="video/mp4" />
+            </video>
+            <div class="content">
+              <h2 class="name">KẾT NỐI CỘNG ĐỒNG</h2>
+              <p class="des">"Thành công không đến với kẻ lười biến"</p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <div class="buttons-slider">
+          <button id="prev">
+            <i class="fa-solid fa-caret-left fa-xl"></i>
+          </button>
+          <button id="next">
+            <i class="fa-solid fa-caret-right fa-xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="language">
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img1.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img2.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img3.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img4.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img5.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img6.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img7.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img8.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img9.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img10.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img11.png" alt="" />
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
+            <img src="../img/img12.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line1"></div>
+
+    <!-- thảo luận -->
+    <section class="comment">
+      <div class="container">
+        <div class="container-title mb-5 mt-5">
+          <h1 class="title note-title pt-3 pb-3">Thảo Luận</h1>
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12"
+            data-aos="zoom-out-down"
+            data-aos-duration="1200"
+          >
+            <div>
+              <img class="imgcmt" src="../img/Chat.png" alt="" />
+              <img class="imgcmt" src="../img/connet.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12"
+            data-aos="zoom-out-down"
+            data-aos-duration="1200"
+          >
+            <h3>
+              <i
+                class="fa-solid fa-comment-dots fa-xl"
+                style="color: #045ffb"
+              ></i>
+              Danh sách phản hồi
+            </h3>
+            <div class="cmt-wrapper">
+              <div class="scroll-cmt">
+                <div class="list-comment">
+                  <div class="people-commet">
+                    <div class="img-comment">
+                      <img src="../img/avt1.jpeg" alt="" />
+                    </div>
+                    <div class="text-comment">
+                      <div class="user-info">
+                        <h4>
+                          Bảo Leee
+                          <span class="time">2 giờ trước</span>
+                        </h4>
+                      </div>
+                      <p>
+                        hú hồn hên quá ko học ở đây là em đã tạch môn lập trình
+                        C++ mất rồi
+                      </p>
+                      <div class="action">
+                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                        <i
+                          class="fa-regular fa-thumbs-up"
+                          style="color: #005eff"
+                        >
+                        </i
+                        ><a href="#" class="like"> Like </a>
+                        <a href="#" class="reply"> Trả lời </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-comment">
+                  <div class="people-commet">
+                    <div class="img-comment">
+                      <img src="../img/avt2.jpeg" alt="" />
+                    </div>
+                    <div class="text-comment">
+                      <div class="user-info">
+                        <h4>
+                          Bảo Leee
+                          <span class="time">2 giờ trước</span>
+                        </h4>
+                      </div>
+                      <p>
+                        Trải nghiệm học tập của tôi trên trang web này thật
+                        tuyệt vời! Giao diện thân thiện và các tài liệu rất dễ
+                        hiểu.
+                      </p>
+                      <div class="action">
+                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                        <i
+                          class="fa-regular fa-thumbs-up"
+                          style="color: #005eff"
+                        >
+                        </i
+                        ><a href="#" class="like"> Like </a>
+                        <a href="#" class="reply"> Trả lời </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-comment">
+                  <div class="people-commet">
+                    <div class="img-comment">
+                      <img src="../img/avt3.jpeg" alt="" />
+                    </div>
+                    <div class="text-comment">
+                      <div class="user-info">
+                        <h4>
+                          Hiếu Võ
+                          <span class="time">2 giờ trước</span>
+                        </h4>
+                      </div>
+                      <p>Oh Shit!! It's great!!</p>
+                      <div class="action">
+                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                        <i
+                          class="fa-regular fa-thumbs-up"
+                          style="color: #005eff"
+                        >
+                        </i
+                        ><a href="#" class="like"> Like </a>
+                        <a href="#" class="reply"> Trả lời </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-comment">
+                  <div class="people-commet">
+                    <div class="img-comment">
+                      <img src="../img/avt4.jpeg" alt="" />
+                    </div>
+                    <div class="text-comment">
+                      <div class="user-info">
+                        <h4>
+                          Bảo Leee
+                          <span class="time">2 giờ trước</span>
+                        </h4>
+                      </div>
+                      <p>tuyệt vời quá trời ạ !!!</p>
+                      <div class="action">
+                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                        <i
+                          class="fa-regular fa-thumbs-up"
+                          style="color: #005eff"
+                        >
+                        </i
+                        ><a href="#" class="like"> Like </a>
+                        <a href="#" class="reply"> Trả lời </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-comment">
+                  <div class="people-commet">
+                    <div class="img-comment">
+                      <img src="../img/avt5.jpeg" alt="" />
+                    </div>
+                    <div class="text-comment">
+                      <div class="user-info">
+                        <h4>
+                          Bảo Leee
+                          <span class="time">2 giờ trước</span>
+                        </h4>
+                      </div>
+                      <p>
+                        hóng ra thêm nhiều khóa học mới nữa chứ học cuốn quá dức
+                        ra không được luôn
+                      </p>
+                      <div class="action">
+                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                        <i
+                          class="fa-regular fa-thumbs-up"
+                          style="color: #005eff"
+                        >
+                        </i
+                        ><a href="#" class="like"> Like </a>
+                        <a href="#" class="reply"> Trả lời </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-comment">
+                  <div class="people-commet">
+                    <div class="img-comment">
+                      <img src="../img/avt6.jpeg" alt="" />
+                    </div>
+                    <div class="text-comment">
+                      <div class="user-info">
+                        <h4>
+                          Thị Diễm
+                          <span class="time">2 giờ trước</span>
+                        </h4>
+                      </div>
+                      <p>
+                        Khóa học này cung cấp kiến thức rất đầy đủ và thú vị.
+                        Tôi đã học được nhiều điều mới và áp dụng ngay vào thực
+                        tế!
+                      </p>
+                      <div class="action">
+                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                        <i
+                          class="fa-regular fa-thumbs-up"
+                          style="color: #005eff"
+                        >
+                        </i
+                        ><a href="#" class="like"> Like </a>
+                        <a href="#" class="reply"> Trả lời </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-comment">
+                  <div class="people-commet">
+                    <div class="img-comment">
+                      <img src="../img/avt7.jpg" alt="" />
+                    </div>
+                    <div class="text-comment">
+                      <div class="user-info">
+                        <h4>
+                          Jhone Nguyễn
+                          <span class="time">2 giờ trước</span>
+                        </h4>
+                      </div>
+                      <p>
+                        Khóa học này thực sự xứng đáng với mọi xu để tham gia.
+                        Tôi rất hạnh phúc vì đã đầu tư thời gian và tiền bạc vào
+                        nó!
+                      </p>
+                      <div class="action">
+                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                        <i
+                          class="fa-regular fa-thumbs-up"
+                          style="color: #005eff"
+                        >
+                        </i
+                        ><a href="#" class="like"> Like </a>
+                        <a href="#" class="reply"> Trả lời </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- chỗ của tôi -->
+              <div class="my-comment">
+                <img src="../img/avt1.jpeg" alt="" />
+                <div class="cmt">
+                  <input class="type" name="" id="" placeholder="Bình luận!!" />
+                  <div class="post">
+                    <i class="fa-solid fa-location-arrow"></i>
+                  </div>
+                  <div class="cmt-icon">
+                    <a href="#">
+                      <i class="fa-solid fa-bold" style="color: #000000"> </i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-italic" style="color: #000000"> </i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-underline" style="color: #000000">
+                      </i>
+                    </a>
+                    <a href="#">
+                      <i
+                        class="fa-solid fa-strikethrough"
+                        style="color: #000000"
+                      ></i>
+                    </a>
+                    <a href="#">
+                      <i
+                        class="fa-solid fa-arrow-down-z-a"
+                        style="color: #000000"
+                      ></i>
+                    </a>
+                    <a href="#">
+                      <i
+                        class="fa-solid fa-folder-open"
+                        style="color: #000000"
+                      ></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-bars" style="color: #000000"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-link" style="color: #000000"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- đăng nhập đăng kí  -->
+    <section class="wrapper-dk js-wrapper-dk">
+      <form class="form-dk js-form-dk">
+        <label for="nhapmail">Email </label>
+        <input
+          type="text"
+          id="nhapmail"
+          class="inputForm"
+          placeholder="Nhập email"
+        />
+        <label for="nhappass">Password </label>
+        <input
+          type="password"
+          id="nhappass"
+          class="inputForm"
+          placeholder="Nhập mật khẩu"
+        />
+
+        <div class="nho-quen">
+          <div>
+            <input type="checkbox" />
+            <span>Nhớ mật khẩu </span>
+          </div>
+          <a href="#" class="dkdn">Quên mật khẩu?</a>
+        </div>
+        <button class="button-dk">Đăng Nhập</button>
+        <p>
+          Bạn không có tài khoản ư ? <a href="#" class="dkdn">Đăng Kí Ngay</a>
+        </p>
+        <p>Hoặc với</p>
+
+        <div class="nho-quen">
+          <button class="btn-dk">
+            <span
+              ><i class="fa-brands fa-google" style="color: #000000"> </i>
+              Google</span
+            ></button
+          ><button class="btn-dk">
+            <span
+              ><i class="fa-solid fa-envelope" style="color: #000000"></i>
+              Mail</span
+            >
+          </button>
+        </div>
+      </form>
+    </section>
+    <!-- footer -->
+
+    <footer>
+      <div class="footer mt-5">
+        <div class="container-">
+          <div class="row m-0 ps-5 pe-5">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 mt-5">
+              <div class="box1">
+                <h2>liên hệ</h2>
+
+                <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
+
+                <a class="footer-items" href="#"
+                  ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
+                  vndhieuak@gmail.com</a
+                >
+
+                <a class="footer-items" href="#"
+                  ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
+                >
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 mt-5">
+              <div class="box2">
+                <h2>group</h2>
+
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-facebook-f"></i> facebook</a
+                >
+
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-twitter"></i> twitter</a
+                >
+
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-instagram"></i> instagram</a
+                >
+
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-youtube"></i> youtube</a
+                >
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12 mt-5">
+              <h2>Địa chỉ</h2>
+              <div class="wrapper-map">
+                <iframe
+                  class="gg-map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7715033490863!2d108.21084937491717!3d16.077342784603367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184792140755%3A0xd4058cb259787dac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgdGh14bqtdCAtIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1715849086904!5m2!1svi!2s"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 mt-5">
+              <h2>phản hồi</h2>
+              <div class="box3">
+                <p>
+                  Hãy gửi phản hồi cho chúng tôi để hoàn thiện trang wed trong
+                  khoản thời gian sớm nhất bạn nhé
+                </p>
+
+                <form action="">
+                  <div class="mess">
+                    <label for="mess">TIN NHẮN</label>
+                    <input
+                      type="text"
+                      name=""
+                      id="mess"
+                      placeholder="Nhập lời nhắn...."
+                      required
+                    />
+                  </div>
+                  <div class="email">
+                    <label for="mail">Email</label>
+                    <input
+                      type="email"
+                      name=""
+                      id="mail"
+                      placeholder="Email phản hồi...."
+                      required
+                    />
+                  </div>
+                  <div class="footer-btn">
+                    <input type="submit" value="gửi" />
+                    <input type="reset" value="xóa" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <p class="author mt-2">Thiết kế bởi: HIẾU VÕ</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/slide-kh.js"></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+/*
+ .col-(thiết bị cực nhỏ - chiều rộng màn hình nhỏ hơn 576px)
+
+ .col-sm-(thiết bị nhỏ - chiều rộng màn hình bằng hoặc lớn hơn 576px)
+
+ .col-md-(thiết bị trung bình - chiều rộng màn hình bằng hoặc lớn hơn 768px)
+
+.col-lg-(thiết bị lớn - chiều rộng màn hình bằng hoặc lớn hơn 992px)
+
+.col-xl-(thiết bị xlarge - chiều rộng màn hình bằng hoặc lớn hơn 1200px)
+
+  .col-xxl-(thiết bị xxlarge - chiều rộng màn hình bằng hoặc lớn hơn 1400px) */
+
+/* pc @media (min-width: 1024px)*/
+/* tablet  (min-width: 740px) and (max-width: 1023)*/
+/* điện thoại max-width: 739px */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* slider */
+  .wrapper-slider {
+    height: 400px;
+  }
+  .wrapper-slider .item {
+    width: 150px;
+    height: 250px;
+  }
+  .wrapper-slider .item:nth-child(3) {
+    left: 50%;
+  }
+  .wrapper-slider .item:nth-child(4) {
+    left: calc(50% + 170px);
+  }
+  .wrapper-slider .item:nth-child(5) {
+    left: calc(50% + 340px);
+  }
+  .wrapper-slider .item:nth-child(n + 6) {
+    opacity: 0;
+  }
+  /*  */
+
+  .wrapper-slider .item .name {
+    font-size: 35px;
+  }
+  .wrapper-slider .item .des {
+    font-size: 25px;
+  }
+  /* phần học cùng tôi */
+  .site-title {
+    padding: 80px 0;
+  }
+  .site-title .box-note h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* slider */
+  .wrapper-slider {
+    height: 350px;
+  }
+  .wrapper-slider .item {
+    width: 130px;
+    height: 200px;
+  }
+  .wrapper-slider .item:nth-child(3) {
+    left: 45%;
+  }
+  .wrapper-slider .item:nth-child(4) {
+    left: calc(45% + 150px);
+  }
+  .wrapper-slider .item:nth-child(5) {
+    left: calc(45% + 300px);
+  }
+  .wrapper-slider .item:nth-child(n + 6) {
+    opacity: 0;
+  }
+  /*  */
+  .wrapper-slider .item .content {
+    left: 30px;
+    width: 200px;
+  }
+  .wrapper-slider .item .name {
+    font-size: 25px;
+  }
+  .wrapper-slider .item .des {
+    font-size: 20px;
+  }
+  .wrapper-slider .buttons-slider button {
+    width: 30px;
+    height: 30px;
+  }
+  /* phần học cùng tôi */
+  .site-title {
+    padding: 50px 0;
+  }
+  .site-title .box-note h1 {
+    font-size: 60px;
+  }
+  .site-title .title-text1 {
+  }
+  .site-title .title-text2 {
+    font-size: 20px;
+  }
+  .site-title .title-text1::after {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .site-title .title-text2::before {
+    width: 100px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  /* slider */
+  .wrapper-slider {
+    height: 300px;
+  }
+  .wrapper-slider .item {
+    width: 100px;
+    height: 150px;
+  }
+  .wrapper-slider .item:nth-child(3) {
+    left: 45%;
+  }
+  .wrapper-slider .item:nth-child(4) {
+    left: calc(45% + 115px);
+  }
+  .wrapper-slider .item:nth-child(5) {
+    left: calc(45% + 230px);
+  }
+  .wrapper-slider .item:nth-child(n + 6) {
+    opacity: 0;
+  }
+  /*  */
+  .wrapper-slider .item .content {
+    left: 30px;
+    width: 150px;
+  }
+  .wrapper-slider .item .name {
+    font-size: 20px;
+  }
+  .wrapper-slider .item .des {
+    font-size: 15px;
+  }
+  .wrapper-slider .buttons-slider button {
+    width: 30px;
+    height: 30px;
+  }
+  /* phần học cùng tôi */
+  .site-title .box-note {
+    height: 100px;
+  }
+  .home .banner-image {
+    margin-bottom: 30px;
+  }
+  .site-title {
+    padding: 50px 0;
+  }
+  .site-title .box-note h1 {
+    font-size: 60px;
+  }
+  .site-title .title-text2 {
+    font-size: 20px;
+  }
+  .site-title .title-text1::after {
+    width: 250px;
+  }
+  .site-title .title-text2::before {
+    width: 250px;
+  }
+  /*tin tức  */
+  .CardType2 .CardImgNews2 .NewsImg2 {
+    width: 250px;
+  }
+  .CardBodyNews2 p {
+    -webkit-line-clamp: 4;
+  }
+}
+/* super nhỏ */
+/* @media (min-width: 320px) and (max-width: 575px)  */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* slider */
+  .wrapper-slider {
+    height: 250px;
+  }
+  .wrapper-slider .item {
+    width: 80px;
+    height: 120px;
+  }
+  .wrapper-slider .item:nth-child(3) {
+    left: 60%;
+  }
+  .wrapper-slider .item:nth-child(4) {
+    left: calc(60% + 90px);
+  }
+  .wrapper-slider .item:nth-child(n + 5) {
+    opacity: 0;
+  }
+  /*  */
+  .wrapper-slider .item .content {
+    left: 0px;
+    width: 150px;
+  }
+  .wrapper-slider .item .name {
+    font-size: 20px;
+  }
+  .wrapper-slider .item .des {
+    font-size: 15px;
+  }
+  .wrapper-slider .buttons-slider button {
+    width: 30px;
+    height: 30px;
+  }
+  /* phần học cùng tôi */
+  .site-title .box-note {
+    height: 100px;
+  }
+  .home .banner-image {
+    margin-bottom: 30px;
+  }
+  .site-title {
+    padding: 20px 0;
+  }
+  .site-title .box-note h1 {
+    font-size: 45px;
+  }
+  .site-title .title-text2 {
+    font-size: 20px;
+  }
+  .site-title .title-text1::after {
+    width: 250px;
+  }
+  .site-title .title-text2::before {
+    width: 100px;
+  }
+  /* mấy cái tiêu đề */
+  .title {
+    font-size: 40px;
+  }
+  /*  tin tức */
+  .CardType2 .CardImgNews2 .NewsImg2 {
+    width: 200px;
+  }
+  .CardBodyNews2 p {
+    -webkit-line-clamp: 3;
+  }
+}
