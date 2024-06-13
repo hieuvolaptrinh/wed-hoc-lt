@@ -5,15 +5,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
 }
-
 .row {
-  /* padding: 0; */
   margin: 0;
-}
-body {
-  /* background-color: aqua; */
 }
 /* head video  */
 .head-video {
@@ -70,11 +64,8 @@ body {
 
 /* thông tin video */
 .rate {
-  /* flex-direction: row; */
   align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 10px;
 }
 .rate button {
   background-color: #ebebeb;
@@ -88,15 +79,23 @@ body {
   margin-top: 5px;
   font-size: 20px;
 }
-
 .rate .like i {
-  color: blue;
 }
 .rate .download i {
   color: green;
 }
 .rate .share i {
   color: rgb(95, 104, 27);
+}
+/* ấn nút */
+.like.active {
+  background-color: #0635f0; /* Màu xanh lá */
+  color: rgb(255, 255, 0);
+}
+
+.dislike.active {
+  background-color: #808080; /* Màu xám */
+  color: rgb(255, 225, 0);
 }
 /* comment */
 .cmt-khung {
@@ -106,15 +105,18 @@ body {
   box-shadow: none;
 }
 .scroll-cmt {
-  /* direction: ltr; */
+  background-color: #e1f1cf;
   overflow: auto;
   height: 500px;
   padding-left: 20px;
   margin-bottom: 20px;
   border-bottom: black solid 2px;
-  /* direction: rtl; */
 }
-
+.list-video-title {
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(0, 255, 8);
+}
 video {
 }
 .video {
@@ -131,10 +133,7 @@ video {
   height: 100%;
   object-fit: cover;
 }
-.text-video p {
-  text-align: justify;
-  margin-bottom: 0;
-}
+
 .title-video {
   display: flex;
   flex-direction: column;
@@ -153,20 +152,21 @@ video {
 }
 .title-video h4 {
   font: 600 20px "Times New Roman", Times, serif;
-
   text-align: justify;
   /* margin-bottom: 0; */
 }
+.title-video p {
+  text-align: justify;
+  margin-bottom: 0;
+}
 .list-video-wrapper {
-  /* Tạo thanh cuộn nếu nội dung vượt quá kích thước */
+  background-color: #e1f1cf;
   overflow-y: auto;
-
   direction: rtl;
   /* Chỉnh hướng của thanh cuộn sang bên trái */
 }
-
 .list-video {
   direction: ltr;
-  /* Chỉnh hướng của nội dung video sang bên trái */
-  height: 1400px; /* Đặt chiều cao để hiển thị một số video và tạo thanh cuộn khi cần */
+  /* Chỉnh hướng của nội dung video sang bên phải */
+  height: 1400px;
 }

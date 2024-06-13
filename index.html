@@ -8,25 +8,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <!-- logo  -->
     <link rel="shortcut icon" href="img/lo.png" />
-    <!--  icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <!-- link boostrap vào để làm cho nhanh với lại là responsivie cho nó khỏe -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <!-- animate -->
     <link
       rel="stylesheet"
@@ -54,7 +46,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Kết hợp hai class "collapse" và "navbar-collapse" lại với nhau, phần tử sẽ có khả năng thu gọn và mở rộng, 
+        <!-- kết hợp hai class "collapse" và "navbar-collapse" lại với nhau, phần tử sẽ có khả năng thu gọn và mở rộng, 
                 cũng như định dạng phù hợp với giao diện của thanh điều hướng (navbar) trong Bootstrap. -->
 
         <div class="collapse navbar-collapse" id="open">
@@ -149,21 +141,25 @@
               <h1 class="note-title title-text text-uppercase">học cùng tôi</h1>
             </div>
 
-            <h3 class="title-text text-uppercase title-text2">tham gia ngay nào</h3>
+            <h3 class="title-text text-uppercase title-text2">
+              tham gia ngay nào
+            </h3>
             <div class="button-home">
               <form class="d-flex">
                 <a href="#">
                   <button
                     type="button"
-                    class="btn btn-primary me-5 text-uppercase js-dk"
+                    class="btn btn-primary me-5 text-uppercase"
+                    id="js-dk"
                   >
-                    đăng ký
+                    Đăng Ký
                   </button>
                 </a>
                 <a href="#">
                   <button
                     type="button"
-                    class="btn btn-primary text-uppercase js-dk"
+                    class="btn btn-primary text-uppercase"
+                    id="js-dn"
                   >
                     đăng nhập
                   </button>
@@ -184,9 +180,8 @@
         </div>
       </div>
     </section>
-
     <!-- logo đẹp -->
-    <div class="language animate__zoomInDown animate__animated" >
+    <div class="language animate__zoomInDown animate__animated">
       <div class="container mt-2">
         <div class="row">
           <div class="img-language col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
@@ -230,13 +225,129 @@
     </div>
 
     <div class="line1"></div>
+    <!-- giới thiệu -->
+    <section class="infor-teacher">
+      <div class="container">
+        <div
+          class="sub-style"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+        >
+          <h1
+            class="sub-title px-3 uppercase"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="1000"
+          >
+            code club
+          </h1>
+        </div>
+        <h2
+          class="mb-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
+          hệ thống giáo dục với xứ mệnh to lớn
+        </h2>
+        <p
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos="flip-right"
+        >
+          Tại Code Club, chúng tôi tin rằng lập trình không chỉ là một kỹ năng,
+          mà còn là cánh cửa mở ra một thế giới đầy tiềm năng. Dù bạn là người
+          mới bắt đầu hay một lập trình viên kinh nghiệm, chương trình giảng dạy
+          toàn diện và các khóa học do chuyên gia dẫn dắt sẽ dẫn bạn vào một
+          chặng đường biến đổi. Các khóa học của chúng tôi bao gồm nhiều ngôn
+          ngữ lập trình và khuôn khổ khác nhau, như Python, Java, JavaScript và
+          nhiều hơn thế. Thông qua các bài học tương tác, các dự án thực hành và
+          các nghiên cứu tình huống thực tế, học viên của chúng tôi sẽ có được
+          kinh nghiệm thực tiễn và sự tự tin để vượt qua những thách thức phức
+          tạp.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <div class="team-item">
+              <div class="team-img">
+                <div class="team-img-teacher">
+                  <img src="img/teacher1.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="team-icon">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"> <i class="fab fa-twitter"></i></a>
+                  <a href="#"> <i class="fab fa-instagram"></i></a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="team-content">
+                <h5>Skick Mesi</h5>
+                <p>CEO</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <div class="team-item">
+              <div class="team-img">
+                <div class="team-img-teacher">
+                  <img src="img/teacher2.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="team-icon">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"> <i class="fab fa-twitter"></i></a>
+                  <a href="#"> <i class="fab fa-instagram"></i></a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="team-content">
+                <h5>Johne Nguyễn</h5>
+                <p>Chủ tịch Code Club</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <div class="team-item">
+              <div class="team-img">
+                <div class="team-img-teacher">
+                  <img src="img/teacher3.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="team-icon">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"> <i class="fab fa-twitter"></i></a>
+                  <a href="#"> <i class="fab fa-instagram"></i></a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="team-content">
+                <h5>Sơn Đặng</h5>
+                <p>Đồng Sáng Lập Code Club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- lập trình là gì ? -->
     <section class="dev">
-      
       <!-- <h1>Lập trình là xu thế của tương lai</h1> -->
       <div class="container">
         <div class="container-title mt-5 mb-5">
-          <h1 class="title note-title pt-2">lập trình ? </h1>
+          <h1 class="title note-title pt-2">lập trình ?</h1>
         </div>
         <div class="dev">
           <div class="row">
@@ -499,50 +610,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="skill-dev">
-      <div class="skill">
-        <h3>
-          các kỹ năng cần có
-          <i class="fa-solid fa-check fa-2xl" style="color: #005eff"></i>
-        </h3>
-        <div class="list-skill">
-          <div class="skill-items">
-            <i
-              class="fa-solid fa-magnifying-glass-chart fa-2xl"
-              style="color: #04ff00"
-            ></i>
-            <div>
-              <h5>khả năng tự học</h5>
-            </div>
-          </div>
-          <div class="skill-items">
-            <i
-              class="fa-solid fa-gears fa-flip-horizontal fa-2xl"
-              style="color: #04ff00"
-            ></i>
-            <div>
-              <h5>giải quyết vấn đề</h5>
-            </div>
-          </div>
-          <div class="skill-items">
-            <i
-              class="fa-solid fa-people-group fa-2xl"
-              style="color: #00f054"
-            ></i>
-            <div>
-              <h5>làm việc nhóm</h5>
-            </div>
-          </div>
-          <div class="skill-items">
-            <i class="fa-solid fa-quote-left fa-2xl" style="color: #00ff1e"></i>
-            <div>
-              <h5>kỹ năng thuyết trình</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-    </section> -->
 
     <section class="course">
       <div class="container-title mt-5 mb-5">
@@ -552,526 +619,1050 @@
 
       <div class="card-group container">
         <img src="img/bgr.png" class="course-bgr" />
-        <div class="row">
-          <!-- cột -->
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-right"
-          >
-            <div class="wrapper">
-              <div class="pin-hot pin">
-                <p>Xu Hướng</p>
-              </div>
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img
-                    class="card-img-top ImgKh"
-                    src="img/cnew.png"
-                    alt="hình"
-                  />
-                </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">C++</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                      <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i class="fa-solid fa-star fa-" style="color: #ffe100">
-                        </i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      941
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-right"
-          >
-            <div class="wrapper">
-              <div class="pin-new pin">
-                <p>Mới Nhất</p>
-              </div>
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img
-                    class="card-img-top ImgKh"
-                    src="img/Bootstrap.jpg"
-                    alt="hình"
-                  />
-                </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">BOOTSTRAP</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                      <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      241
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-right"
-          >
-            <div class="wrapper">
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img
-                    class="card-img-top ImgKh"
-                    src="img/htmlcss.png"
-                    alt="hình"
-                  />
-                </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">HTML/CSS</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                      <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      241
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-right"
-          >
-            <div class="wrapper">
-              <div class="pin-hot pin">
-                <p>Xu Hướng</p>
-              </div>
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img
-                    class="card-img-top ImgKh"
-                    src="img/java.png"
-                    alt="hình"
-                  />
-                </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">JAVA</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                      <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      241
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="not-hover ps-2 pe-2">
+          <div class="row">
+            <!-- cột -->
 
-          <!-- cột -->
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-up"
-          >
-            <div class="wrapper">
-              <div class="pin-new pin">
-                <p>Mới Nhất</p>
-              </div>
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img class="card-img-top ImgKh" src="img/rb.png" alt="hình" />
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="pin-hot pin">
+                  <p>Xu Hướng</p>
                 </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">RUBY</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/cnew.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">C++</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 50 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          >
+                          </i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
+                        484
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
                         ></i>
                       </p>
                     </div>
                   </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      241
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="pin-new pin">
+                  <p>Mới Nhất</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/Bootstrap.jpg"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">BOOTSTRAP</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        889
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/html-css.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">HTML/CSS</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 234 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="pin-hot pin">
+                  <p>Xu Hướng</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/java.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">JAVA</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        987
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-up"
-          >
-            <div class="wrapper">
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img
-                    class="card-img-top ImgKh"
-                    src="img/reactjsps.png"
-                    alt="hình"
-                  />
+        </div>
+        <!-- row 2 -->
+        <div class="not-hover ps-2 pe-2">
+          <div class="row">
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="pin-new pin">
+                  <p>Mới Nhất</p>
                 </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">REACTJS</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/anngularjs.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">ANGULAR</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          >
+                          </i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
+                        941
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
                         ></i>
                       </p>
                     </div>
                   </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      241
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="pin-trend pin">
+                  <p>Nổi Bật</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/vuejs.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">VUE JS</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffffff"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="pin-hot pin">
+                  <p>Xu Hướng</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/nestjs.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">NEST JS</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 120 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffffff"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        91
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="pin-trend pin">
+                  <p>Nổi Bật</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/typescript.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">TYPESCRIPT</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-up"
-          >
-            <div class="wrapper">
-              <div class="pin-hot pin">
-                <p>Xu Hướng</p>
-              </div>
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img
-                    class="card-img-top ImgKh"
-                    src="img/app3d.png"
-                    alt="hình"
-                  />
+        </div>
+        <!-- row 3   -->
+        <div class="not-hover ps-2 pe-2">
+          <div class="row">
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="pin-hot pin">
+                  <p>Xu Hướng</p>
                 </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">MOBILE APP</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/pythonps.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">PHYTHON</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          >
+                          </i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
+                        941
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
                         ></i>
                       </p>
                     </div>
                   </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      241
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="pin-new pin">
+                  <p>Mới Nhất</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/unity.jpg"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">UNITY</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/dotnet.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">.NET</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 120 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffffff"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        91
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-right"
+            >
+              <div class="wrapper">
+                <div class="pin-new pin">
+                  <p>Mới Nhất</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/swift.jpg"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">SWIFT</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 99 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        333
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos="flip-up"
-          >
-            <div class="wrapper">
-              <div class="pin-trend pin">
-                <p>Nổi Bật</p>
-              </div>
-              <div class="cards">
-                <div class="CardImgKh">
-                  <img
-                    class="card-img-top ImgKh"
-                    src="img/phpps.png"
-                    alt="hình"
-                  />
+        </div>
+        <!-- row 4 -->
+        <div class="not-hover ps-2 pe-2">
+          <div class="row">
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="pin-new pin">
+                  <p>Mới Nhất</p>
                 </div>
-                <div class="card-body CardBodyKH">
-                  <h3 class="card-title CardTitleKh">PHP</h3>
-                  <div>
-                    <div class="value">
-                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/rb.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">RUBY</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
                         ></i>
                       </p>
                     </div>
                   </div>
-                  <div class="d-flex">
-                    <a href="htmls/videos.html" class="btn LearnBtn"
-                      >HỌC MIỄN PHÍ</a
-                    >
-                    <p>
-                      241
-                      <i
-                        class="fa-solid fa-people-group fa-xl"
-                        style="color: #0011fa"
-                      ></i>
-                    </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/reactjsps.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">REACTJS</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="pin-hot pin">
+                  <p>Xu Hướng</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/app3d.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">MOBILE APP</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #f7f7f7"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos="flip-up"
+            >
+              <div class="wrapper">
+                <div class="pin-trend pin">
+                  <p>Nổi Bật</p>
+                </div>
+                <div class="cards">
+                  <div class="CardImgKh">
+                    <img
+                      class="card-img-top ImgKh"
+                      src="img/phpps.png"
+                      alt="hình"
+                    />
+                  </div>
+                  <div class="card-body CardBodyKH">
+                    <h3 class="card-title CardTitleKh">PHP</h3>
+                    <div>
+                      <div class="value">
+                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                        <p>
+                          Đánh Giá :<i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-"
+                            style="color: #ffe100"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <a href="htmls/videos.html" class="btn LearnBtn"
+                        >HỌC MIỄN PHÍ</a
+                      >
+                      <p>
+                        241
+                        <i
+                          class="fa-solid fa-people-group fa-xl"
+                          style="color: #0011fa"
+                        ></i>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="page123">
-            <ul>
-              <li><a href="#">&lt;</a></li>
-              <li class="active"><span>1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">&gt;</a></li>
-            </ul>
-          </div>
-        </div> -->
-
-        <!-- row 2 nè -->
-        <h2 class="inforkh">
+        </div>
+        <div class="page123">
+          <ul>
+            <li><a href="#">&lt;</a></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&gt;</a></li>
+          </ul>
+        </div>
+        <!-- row2 nè -->
+      </div>
+      <div class="container" data-aos="zoom-out-down" data-aos-duration="500">
+        <h2 class="title-contest">
           <i
             class="fa-solid fa-right-long fa-shake fa-xl"
             style="color: #11ff00"
           ></i>
           Cuộc thi:
         </h2>
-      </div>
-
-      <div class="container" data-aos="zoom-out-down" data-aos-duration="500">
         <div class="contest">
           <div class="infor-contest">
             <img class="img-contest" src="img/thi-lt.jpeg" alt="" />
@@ -1087,668 +1678,10 @@
       </div>
     </section>
     <!-- end khóa học -->
-    <!-- tin công nghệ  -->
-    <section class="TechNews">
-      <div class="container TechNewswrapper">
-        <div class="container-title mb-5 mt-5">
-          <h1 class="title note-title pt-3 pb-3">TIN CÔNG NGHỆ</h1>
-        </div>
-        <img src="img/bgr-tt1.png" class="TechNews-bgr1" alt="" />
-        <img src="img/bgr-tt.png" class="TechNews-bgr2" alt="" />
-        <!-- đoạn 1 -->
-        <div class="row1">
-          <div class="row">
-            <!-- dưới lg : 992px là sẽ 12  -->
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-              <div class="row">
-                <h2>
-                  <i
-                    class="fa-solid fa-caret-right fa-xl"
-                    style="color: #ff0000"
-                  ></i>
-                  Tin nóng
-                </h2>
-                <div
-                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-5"
-                  data-aos="fade-up-right"
-                  data-aos-duration="3000"
-                >
-                  <img class="img-loa" src="img/loa1.png" alt="" />
-                </div>
-                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-5">
-                  <div class="card CardType1">
-                    <a href="#">
-                      <div class="CardImgNews1">
-                        <img
-                          class="card-img-top NewsImg1"
-                          src="img/News1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card-body CardBodyNews1">
-                        <h3>Ngành AI trả lương cao từ 95 - 230 triệu</h3>
-                        <p>
-                          Thị trường IT Việt Nam năm 2022 sôi động sau dịch
-                          Covid-19, với mức lương cho lập trình viên từ 350 -
-                          1.510 USD. Đào tạo nhân lực AI chưa đủ, với nhu cầu
-                          tăng cao và kỹ năng mềm được đánh giá cao.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </div> -->
-                <div
-                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-5"
-                  data-aos="fade-up-right"
-                  data-aos-duration="1200"
-                >
-                  <div class="card CardType1">
-                    <div class="pin-news">
-                      <p>Nóng</p>
-                    </div>
-                    <a href="#">
-                      <div class="CardImgNews1">
-                        <img
-                          class="card-img-top NewsImg1"
-                          src="img/depne1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card-body CardBodyNews1">
-                        <h3>Kỹ sư IT Việt đang nhận lương bao nhiêu?</h3>
-                        <p>
-                          Nhân sự IT phần mềm nằm trong số những ngành được trả
-                          lương cao nhất tại Việt Nam, với mức hàng chục triệu
-                          đồng mỗi tháng. Theo thống kê của nền tảng tuyển dụng
-                          TopCV, nhân viên IT phần mềm là một trong ba vị trí
-                          được "săn tìm" nhiều nhất trong 2022 và xu hướng này
-                          vẫn tiếp tục được duy trì năm nay, cùng hai ngành khác
-                          là kinh doanh và marketing. Trong số 10 ngành nghề
-                          được khảo sát, IT phần mềm và Công nghệ thông tin
-                          (CNTT) thuộc nhóm có lương cao nhất khi so sánh về
-                          nhân sự có cùng thâm niên.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-5"
-                  data-aos="fade-up-right"
-                  data-aos-duration="1200"
-                >
-                  <div class="CardType2">
-                    <div class="pin-news">
-                      <p>New</p>
-                    </div>
-
-                    <a href="#">
-                      <div class="CardImgNews2">
-                        <a href=""
-                          ><img class="NewsImg2" src="img/hacker.jpeg" alt=""
-                        /></a>
-                      </div>
-                      <div class="CardBodyNews2">
-                        <a href="">
-                          <h3>
-                            Độ Mixi lại bị hack kênh YouTube, đổi thành SpaceX
-                          </h3>
-                          <p>
-                            Kênh YouTube Mixi Gaming với 7,3 triệu lượt theo dõi
-                            của Độ Mixi tiếp tục bị chiếm quyền kiểm soát, đổi
-                            tên thành SpaceX của Elon Musk. Sáng 9/4, cộng đồng
-                            phát hiện kênh YouTube của streamer nổi tiếng Độ
-                            Mixi bị thay tên và toàn bộ video thay bằng nội dung
-                            của công ty tên lửa Mỹ
-                          </p>
-                        </a>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-5"
-                  data-aos="fade-up-right"
-                  data-aos-duration="1200"
-                >
-                  <div class="CardType2">
-                    <div class="CardImgNews2">
-                      <a href="#"
-                        ><img class="NewsImg2" src="img/newsai.jpg" alt=""
-                      /></a>
-                    </div>
-                    <div class="CardBodyNews2">
-                      <a href="#">
-                        <h3>Kỹ sư phần mềm bằng AI đầu tiên trên thế giới</h3>
-                        <p>
-                          Ngày 13/3, Cognition Labs, startup về công nghệ trí
-                          tuệ nhân tạo tại Mỹ, công bố kỹ sư phát triển phần mềm
-                          AI đầu tiên trên thế giới. "Devin là một đồng đội tài
-                          năng và không biết mệt, sẵn sàng làm cùng bạn hoặc tự
-                          hoàn thành nhiệm vụ để bạn đánh giá. Với Devin, các kỹ
-                          sư có thể tập trung vào những vấn đề thú vị hơn, các
-                          đội kỹ thuật có thể nỗ lực cho những mục tiêu tham
-                          vọng hơn", Cognition cho biết.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- dưới lg : 992px là sẽ 12  -->
-            <!-- đoạn 3 -->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-              <div class="row">
-                <h2>
-                  <i
-                    class="fa-solid fa-caret-right fa-xl"
-                    style="color: #ff0000"
-                  ></i>
-                  Nổi bật tuần vừa qua
-                </h2>
-                <div
-                  class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-3"
-                  data-aos="zoom-out-left"
-                >
-                  <div class="CardType3">
-                    <a href="#">
-                      <div class="CardImgNews3">
-                        <img class="NewsImg3" src="img/New3.1.jpg" alt="" />
-                      </div>
-                    </a>
-                    <div class="CardBodyNews3">
-                      <a href="#">
-                        <h3>Bước tiến của AI</h3>
-                        <p>
-                          Trí tuệ nhân tạo (AI) từ mô hình học hỏi đơn giản trở
-                          thành chatbot biết suy nghĩ và lập luận, thúc đẩy sự
-                          phát triển mọi lĩnh vực kinh tế - xã hội, sau 67 năm.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-3"
-                  data-aos="zoom-out-left"
-                >
-                  <div class="CardType3">
-                    <div class="pin-news">
-                      <p>Nóng</p>
-                    </div>
-                    <div class="CardImgNews3">
-                      <a href="#"
-                        ><img class="NewsImg3" src="img/News2.2.jpg" alt=""
-                      /></a>
-                    </div>
-                    <div class="CardBodyNews3">
-                      <a href="#">
-                        <h3>Ngành AI trả lương cao từ 95 - 230 triệu</h3>
-                        <p>
-                          Thị trường IT Việt Nam năm 2022 sôi động sau dịch
-                          Covid-19, với mức lương cho lập trình viên từ 350 -
-                          1.510 USD. Đào tạo nhân lực AI chưa đủ, với nhu cầu
-                          tăng cao và kỹ năng mềm được đánh giá cao.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-3"
-                  data-aos="zoom-out-left"
-                >
-                  <div class="CardType3">
-                    <div class="CardImgNews3">
-                      <a href="#"
-                        ><img class="NewsImg3" src="img/news3ai.png" alt=""
-                      /></a>
-                    </div>
-                    <div class="CardBodyNews3">
-                      <a href="#">
-                        <h3>AI rút ngắn việc lập trình</h3>
-                        <p>
-                          Cụ thể, ChatDev phát triển các AI dựa trên mô hình
-                          ChatGPT 3.5, sau đó thiết lập để chúng phối hợp với
-                          nhau giống như thành viên trong một công ty công nghệ.
-                          Mỗi AI đảm nhiệm vai trò riêng. AI cấp thấp phải nghe
-                          lệnh của AI cấp trên.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-3"
-                  data-aos="zoom-out-left"
-                >
-                  <div class="CardType3">
-                    <div class="CardImgNews3">
-                      <a href="#"
-                        ><img class="NewsImg3" src="img/news3it.png" alt=""
-                      /></a>
-                    </div>
-                    <div class="CardBodyNews3">
-                      <a href="#">
-                        <h3>Rớt môn lập trình, có nên chuyển ngành khác?</h3>
-                        <p>
-                          Em đang là sinh viên năm thứ nhất, chuyên ngành Hệ
-                          thống thông tin, trường Đại học Công nghệ Thông tin. Ở
-                          học kì 1, em học nhập môn lập trình nhưng không hiểu
-                          gì, kết quả là rớt. Em rất nản.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12"
-                  data-aos="fade-down-left"
-                >
-                  <img class="img-loa" src="img/loa.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row2 mb-5">
-          <h2 class="text-uppercase">
-            <i class="fa-solid fa-caret-right fa-xl" style="color: #ff0000"></i>
-            chuyển dịch ngành nghề
-          </h2>
-          <div class="row">
-            <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-2 mb-3"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-            >
-              <div class="card CardType4 mt-2">
-                <div class="pin-news">
-                  <p>Nóng</p>
-                </div>
-                <div class="pin-news2">
-                  <p>Chú ý</p>
-                </div>
-                <a href="#">
-                  <div class="CardImgNews4">
-                    <img
-                      class="card-img-top NewsImg4"
-                      src="img/news43.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-body CardBodyNews4">
-                    <h3>Cuộc thi 'hoa hậu AI' đầu tiên trên thế giới</h3>
-                    <p>
-                      Miss AI được tổ chức World AI Creator Awards (WAICA) và
-                      nền tảng nhà sáng tạo Fanvue của Anh phát động. Đây là
-                      giải thưởng toàn cầu dành cho những người sáng tạo AI trên
-                      thế giới. Họ có thể gửi hình ảnh thí sinh AI để có cơ hội
-                      giành vương miện.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-2 mb-3"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-            >
-              <div class="card CardType4 mt-2">
-                <a href="#">
-                  <div class="CardImgNews4">
-                    <img
-                      class="card-img-top NewsImg4"
-                      src="img/news42.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-body CardBodyNews4">
-                    <h3>
-                      Cơ hội trong ngành bán dẫn có đủ cho hàng chục nghìn người
-                    </h3>
-                    <p>
-                      Theo các chuyên gia, cơ hội việc làm trong ngành bán dẫn
-                      tương lai luôn có và sẽ đáp ứng cho cả thế giới chứ không
-                      riêng Việt Nam. Là đơn vị tham gia xây dựng đề án phát
-                      triển nhân lực cho ngành công nghiệp bán dẫn, đại diện NIC
-                      cho biết đề án cũng đặt ra hai mốc chính là năm 2030 và
-                      2045. Các bên cũng đang tìm kiếm giải pháp thúc đẩy và đào
-                      tạo nguồn nhân lực chất lượng vừa tốt vừa nhanh.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-2 mb-3"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-            >
-              <div class="card CardType4 mt-2">
-                <a href="#">
-                  <div class="CardImgNews4">
-                    <img
-                      class="card-img-top NewsImg4"
-                      src="img/news41.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-body CardBodyNews4">
-                    <h3>
-                      Nhu cầu tuyển dụng lập trình blockchain tăng gần 400%
-                    </h3>
-                    <p>
-                      Công việc của Blockchain Software Developer là xây dựng và
-                      phát triển các ứng dụng từ các giao thức blockchain và
-                      kiến trúc. Những ứng dụng này được vận hành trên hệ thống
-                      lập trình blockchain. Gần giống với các nhà phát triển
-                      web, tuy nhiên với website thì các nhà phát triển thường
-                      sử dụng các giao thức và thiết kế để hoàn thành một trang
-                      web đến tay người dùng.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- đoạn 2 -->
-    </section>
-
-    <!-- thảo luận -->
-    <section class="comment">
-      <div class="container">
-        <div class="container-title mt-5">
-          <h1 class="title note-title pt-3 pb-3">THẢO LUẬN</h1>
-        </div>
-        <div class="row">
-          <div
-            class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12"
-            data-aos="zoom-out-down"
-            data-aos-duration="1200"
-          >
-            <div>
-              <img class="imgcmt" src="img/Chat.png" alt="" />
-              <img class="imgcmt" src="img/connet.png" alt="" />
-            </div>
-          </div>
-
-          <div
-            class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12"
-            data-aos="zoom-out-down"
-            data-aos-duration="1200"
-          >
-            <h3>
-              <i
-                class="fa-solid fa-comment-dots fa-xl"
-                style="color: #045ffb"
-              ></i>
-              Danh sách phản hồi
-            </h3>
-            <div class="cmt-wrapper">
-              <div class="scroll-cmt">
-                <div class="list-comment">
-                  <div class="people-commet">
-                    <div class="img-comment">
-                      <img src="img/avt1.jpeg" alt="" />
-                    </div>
-                    <div class="text-comment">
-                      <div class="user-info">
-                        <h4>
-                          Bảo Leee
-                          <span class="time">2 giờ trước</span>
-                        </h4>
-                      </div>
-                      <p>
-                        hú hồn hên quá ko học ở đây là em đã tạch môn lập trình
-                        C++ mất rồi
-                      </p>
-                      <div class="action">
-                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
-                        <i
-                          class="fa-regular fa-thumbs-up"
-                          style="color: #005eff"
-                        >
-                        </i
-                        ><a href="#" class="like"> Like </a>
-                        <a href="#" class="reply"> Trả lời </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-comment">
-                  <div class="people-commet">
-                    <div class="img-comment">
-                      <img src="img/avt2.jpeg" alt="" />
-                    </div>
-                    <div class="text-comment">
-                      <div class="user-info">
-                        <h4>
-                          Bảo Leee
-                          <span class="time">2 giờ trước</span>
-                        </h4>
-                      </div>
-                      <p>
-                        Trải nghiệm học tập của tôi trên trang web này thật
-                        tuyệt vời! Giao diện thân thiện và các tài liệu rất dễ
-                        hiểu.
-                      </p>
-                      <div class="action">
-                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
-                        <i
-                          class="fa-regular fa-thumbs-up"
-                          style="color: #005eff"
-                        >
-                        </i
-                        ><a href="#" class="like"> Like </a>
-                        <a href="#" class="reply"> Trả lời </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-comment">
-                  <div class="people-commet">
-                    <div class="img-comment">
-                      <img src="img/avt3.jpeg" alt="" />
-                    </div>
-                    <div class="text-comment">
-                      <div class="user-info">
-                        <h4>
-                          Hiếu Võ
-                          <span class="time">2 giờ trước</span>
-                        </h4>
-                      </div>
-                      <p>Oh Shit!! It's great!!</p>
-                      <div class="action">
-                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
-                        <i
-                          class="fa-regular fa-thumbs-up"
-                          style="color: #005eff"
-                        >
-                        </i
-                        ><a href="#" class="like"> Like </a>
-                        <a href="#" class="reply"> Trả lời </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-comment">
-                  <div class="people-commet">
-                    <div class="img-comment">
-                      <img src="img/avt4.jpeg" alt="" />
-                    </div>
-                    <div class="text-comment">
-                      <div class="user-info">
-                        <h4>
-                          Bảo Leee
-                          <span class="time">2 giờ trước</span>
-                        </h4>
-                      </div>
-                      <p>tuyệt vời quá trời ạ !!!</p>
-                      <div class="action">
-                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
-                        <i
-                          class="fa-regular fa-thumbs-up"
-                          style="color: #005eff"
-                        >
-                        </i
-                        ><a href="#" class="like"> Like </a>
-                        <a href="#" class="reply"> Trả lời </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-comment">
-                  <div class="people-commet">
-                    <div class="img-comment">
-                      <img src="img/avt5.jpeg" alt="" />
-                    </div>
-                    <div class="text-comment">
-                      <div class="user-info">
-                        <h4>
-                          Bảo Leee
-                          <span class="time">2 giờ trước</span>
-                        </h4>
-                      </div>
-                      <p>
-                        hóng ra thêm nhiều khóa học mới nữa chứ học cuốn quá dức
-                        ra không được luôn
-                      </p>
-                      <div class="action">
-                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
-                        <i
-                          class="fa-regular fa-thumbs-up"
-                          style="color: #005eff"
-                        >
-                        </i
-                        ><a href="#" class="like"> Like </a>
-                        <a href="#" class="reply"> Trả lời </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-comment">
-                  <div class="people-commet">
-                    <div class="img-comment">
-                      <img src="img/avt6.jpeg" alt="" />
-                    </div>
-                    <div class="text-comment">
-                      <div class="user-info">
-                        <h4>
-                          Thị Diễm
-                          <span class="time">2 giờ trước</span>
-                        </h4>
-                      </div>
-                      <p>
-                        Khóa học này cung cấp kiến thức rất đầy đủ và thú vị.
-                        Tôi đã học được nhiều điều mới và áp dụng ngay vào thực
-                        tế!
-                      </p>
-                      <div class="action">
-                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
-                        <i
-                          class="fa-regular fa-thumbs-up"
-                          style="color: #005eff"
-                        >
-                        </i
-                        ><a href="#" class="like"> Like </a>
-                        <a href="#" class="reply"> Trả lời </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-comment">
-                  <div class="people-commet">
-                    <div class="img-comment">
-                      <img src="img/avt7.jpg" alt="" />
-                    </div>
-                    <div class="text-comment">
-                      <div class="user-info">
-                        <h4>
-                          Jhone Nguyễn
-                          <span class="time">2 giờ trước</span>
-                        </h4>
-                      </div>
-                      <p>
-                        Khóa học này thực sự xứng đáng với mọi xu để tham gia.
-                        Tôi rất hạnh phúc vì đã đầu tư thời gian và tiền bạc vào
-                        nó!
-                      </p>
-                      <div class="action">
-                        <i class="fa-solid fa-heart" style="color: #ff0000"></i>
-                        <i
-                          class="fa-regular fa-thumbs-up"
-                          style="color: #005eff"
-                        >
-                        </i
-                        ><a href="#" class="like"> Like </a>
-                        <a href="#" class="reply"> Trả lời </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- chỗ của tôi -->
-              <div class="my-comment">
-                <img src="img/avt1.jpeg" alt="" />
-                <div class="cmt">
-                  <input class="type" name="" id="" placeholder="Bình luận!!" />
-                  <div class="post">
-                    <i class="fa-solid fa-location-arrow"></i>
-                  </div>
-                  <div class="cmt-icon">
-                    <a href="#">
-                      <i class="fa-solid fa-bold" style="color: #000000"> </i>
-                    </a>
-                    <a href="#">
-                      <i class="fa-solid fa-italic" style="color: #000000"> </i>
-                    </a>
-                    <a href="#">
-                      <i class="fa-solid fa-underline" style="color: #000000">
-                      </i>
-                    </a>
-                    <a href="#">
-                      <i
-                        class="fa-solid fa-strikethrough"
-                        style="color: #000000"
-                      ></i>
-                    </a>
-                    <a href="#">
-                      <i
-                        class="fa-solid fa-arrow-down-z-a"
-                        style="color: #000000"
-                      ></i>
-                    </a>
-                    <a href="#">
-                      <i
-                        class="fa-solid fa-folder-open"
-                        style="color: #000000"
-                      ></i>
-                    </a>
-                    <a href="#">
-                      <i class="fa-solid fa-bars" style="color: #000000"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fa-solid fa-link" style="color: #000000"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- đăng nhập đăng kí  -->
-    <section class="wrapper-dk js-wrapper-dk">
-      <form class="form-dk js-form-dk">
+    <section class="wrapper-dn js-wrapper-dn">
+      <form class="form-dn js-form-dn">
         <label for="nhapmail">Email </label>
         <input
           type="text"
@@ -1764,26 +1697,27 @@
           placeholder="Nhập mật khẩu"
         />
 
-        <div class="nho-quen">
+        <div class="other-options">
           <div>
             <input type="checkbox" />
             <span>Nhớ mật khẩu </span>
           </div>
-          <a href="#" class="dkdn">Quên mật khẩu?</a>
+          <a href="#" class="remember">Quên mật khẩu?</a>
         </div>
-        <button class="button-dk">Đăng Nhập</button>
+        <button class="button-dn"><span>Đăng Nhập</span></button>
         <p>
           Bạn không có tài khoản ư ? <a href="#" class="dkdn">Đăng Kí Ngay</a>
         </p>
         <p>Hoặc với</p>
 
-        <div class="nho-quen">
-          <button class="btn-dk">
+        <div class="other-options">
+          <button class="btn-dn">
             <span
-              ><i class="fa-brands fa-google" style="color: #000000"> </i>
+              ><i class="fa-brands fa-google" style="color: #000000"></i>
               Google</span
-            ></button
-          ><button class="btn-dk">
+            >
+          </button>
+          <button class="btn-dn">
             <span
               ><i class="fa-solid fa-envelope" style="color: #000000"></i>
               Mail</span
@@ -1792,103 +1726,166 @@
         </div>
       </form>
     </section>
+    <section class="wrapper-dk js-wrapper-dk">
+      <form class="form-dk js-form-dk">
+        <label for="dk-email">Email </label>
+        <input
+          type="text"
+          id="dk-email"
+          class="inputForm"
+          placeholder="Nhập email"
+        />
+        <label for="dk-username">Username </label>
+        <input
+          type="text"
+          id="dk-username"
+          class="inputForm"
+          placeholder="Nhập username"
+        />
+        <div class="password-row">
+          <div class="password-column">
+            <label for="dk-pass">Password </label>
+            <input
+              type="password"
+              id="dk-pass"
+              class="inputForm"
+              placeholder="Nhập mật khẩu"
+            />
+          </div>
+          <div class="password-column">
+            <label for="dk-pass-confirm">Nhập Lại Password </label>
+            <input
+              type="password"
+              id="dk-pass-confirm"
+              class="inputForm"
+              placeholder="Xác nhận mật khẩu"
+            />
+          </div>
+        </div>
+        <button class="button-dk"><span>Đăng Ký</span></button>
+        <p>Bạn đã có tài khoản? <a href="#" class="dkdn">Đăng Nhập</a></p>
+        <p>Hoặc với</p>
+
+        <div class="other-options">
+          <button class="btn-dk">
+            <span
+              ><i class="fa-brands fa-google" style="color: #000000"></i>
+              Google</span
+            >
+          </button>
+          <button class="btn-dk">
+            <span
+              ><i class="fa-solid fa-envelope" style="color: #000000"></i>
+              Mail</span
+            >
+          </button>
+        </div>
+      </form>
+    </section>
+
     <!-- footer -->
 
     <footer>
-      <div class="footer mt-5">
-        <div class="container-">
-          <div class="row m-0 ps-5 pe-5">
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 mt-5">
-              <div class="box1">
-                <h2>liên hệ</h2>
+      <div class="container-fluid footer mt-5">
+        <div class="row m-0 ps-5 pe-5">
+          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12 mt-5">
+            <div class="box1">
+              <h2>liên hệ</h2>
 
-                <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
+              <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
 
-                <a class="footer-items" href="#"
-                  ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
-                  vndhieuak@gmail.com</a
-                >
+              <a class="footer-items" href="#"
+                ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
+                vndhieuak@gmail.com</a
+              >
 
-                <a class="footer-items" href="#"
-                  ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
-                >
-              </div>
+              <a class="footer-items" href="#"
+                ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
+              >
             </div>
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 mt-5">
-              <div class="box2">
-                <h2>group</h2>
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-facebook-f"></i> facebook</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-twitter"></i> twitter</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-instagram"></i> instagram</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-youtube"></i> youtube</a
-                >
-              </div>
-            </div>
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12 mt-5">
-              <h2>Địa chỉ</h2>
-              <div class="wrapper-map">
-                <iframe
-                  class="gg-map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7715033490863!2d108.21084937491717!3d16.077342784603367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184792140755%3A0xd4058cb259787dac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgdGh14bqtdCAtIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1715849086904!5m2!1svi!2s"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 mt-5">
-              <h2>phản hồi</h2>
-              <div class="box3">
-                <p>
-                  Hãy gửi phản hồi cho chúng tôi để hoàn thiện trang wed trong
-                  khoản thời gian sớm nhất bạn nhé
-                </p>
-
-                <form action="">
-                  <div class="mess">
-                    <label for="mess">TIN NHẮN</label>
-                    <input
-                      type="text"
-                      name=""
-                      id="mess"
-                      placeholder="Nhập lời nhắn...."
-                      required
-                    />
-                  </div>
-                  <div class="email">
-                    <label for="mail">Email</label>
-                    <input
-                      type="email"
-                      name=""
-                      id="mail"
-                      placeholder="Email phản hồi...."
-                      required
-                    />
-                  </div>
-                  <div class="footer-btn">
-                    <input type="submit" value="gửi" />
-                    <input type="reset" value="xóa" />
-                  </div>
-                </form>
-              </div>
-            </div>
-            <p class="author mt-2">Thiết kế bởi: HIẾU VÕ</p>
           </div>
+          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12 mt-5">
+            <div class="box2">
+              <h2>group</h2>
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-facebook-f"></i> facebook</a
+              >
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-twitter"></i> twitter</a
+              >
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-instagram"></i> instagram</a
+              >
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-youtube"></i> youtube</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mt-5">
+            <h2>Địa chỉ</h2>
+            <div class="wrapper-map">
+              <iframe
+                class="gg-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7715033490863!2d108.21084937491717!3d16.077342784603367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184792140755%3A0xd4058cb259787dac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgdGh14bqtdCAtIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1715849086904!5m2!1svi!2s"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 mt-5">
+            <h2>phản hồi</h2>
+            <div class="box3">
+              <p>
+                Hãy gửi phản hồi cho chúng tôi để hoàn thiện trang wed trong
+                khoản thời gian sớm nhất bạn nhé
+              </p>
+
+              <form action="">
+                <div class="mess">
+                  <label for="mess">TIN NHẮN</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="mess"
+                    placeholder="Nhập lời nhắn...."
+                    required
+                  />
+                </div>
+                <div class="email">
+                  <label for="mail">Email</label>
+                  <input
+                    type="email"
+                    name=""
+                    id="mail"
+                    placeholder="Email phản hồi...."
+                    required
+                  />
+                </div>
+                <div class="footer-btn">
+                  <input type="submit" value="gửi" />
+                  <input type="reset" value="xóa" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div><p class="author mt-2">Thiết kế bởi: HIẾU VÕ</p></div>
         </div>
       </div>
     </footer>
+    <canvas id="canvas"></canvas>
+    <div id="load"></div>
+    <script src="js/mouse.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

@@ -1,31 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.wrapper-dk.open{
+.wrapper-dn.open,
+.wrapper-dk.open {
   display: flex;
-
+  z-index: 1000;
 }
-
+.wrapper-dn,
 .wrapper-dk {
   display: none;
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   height: 100vh;
-
   z-index: 4;
-  /* chỉnh theo chiều cao */
   align-items: center;
-  /* chình theo chiều còn lại */
   justify-content: center;
   background-color: rgba(76, 76, 76, 0.274);
 }
+.form-dn,
 .form-dk {
-
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -39,69 +32,115 @@
 @keyframes roixuong {
   0% {
     opacity: 0;
-  transform: translateY(-200px); /* Bắt đầu từ vị trí này */
-}
-100% {
+    transform: translateY(-200px); /* Bắt đầu từ vị trí này */
+  }
+  100% {
     opacity: 1;
-  transform: translateY(0); /* Kết thúc ở vị trí này */
+    transform: translateY(0); /* Kết thúc ở vị trí này */
+  }
 }
-}
+.form-dn label,
 .form-dk label {
   font-weight: 600;
 }
-
 .inputForm {
   border: 2px solid #00ff00;
   border-radius: 10px;
   height: 50px;
   padding-left: 10px;
   transition: 0.2s ease-in-out;
-
-  /*  */
-  
 }
-/* nhớ và quên mk */
-.nho-quen {
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.password-column {
+  display: flex;
+  flex-direction: column;
+
+  width: 45%;
+}
+.other-options {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   justify-content: space-between;
-  font-size: 16px;
   color: white;
 }
+.form-dn .dkdn,
 .form-dk .dkdn {
   color: #2d79f3;
   font-weight: 500;
   cursor: pointer;
 }
-
+.button-dn,
 .button-dk {
   margin: 20px 0 0 0;
   background-color: #2055e7;
   border: none;
-
   font-size: 20px;
   font-weight: 500;
   border-radius: 10px;
   height: 50px;
   width: 100%;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+/* hover  */
+.button-dk span,
+.button-dn span {
+  position: relative;
+  z-index: 1;
 }
 
-.button-dk:hover {
-  background-color: #0509ed;
-  color: rgb(255, 255, 255);
+.button-dk,
+.button-dn {
+  position: relative;
+  overflow: hidden;
+  background: #1a5ed3;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
+.button-dk::before,
+.button-dn::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to right,
+    #17c3b2,
+    #a6f0f7
+  ); /* Dải màu gradient */
+  transition: 0.5s ease;
+  z-index: 1; /* Đặt z-index cho phần before */
+}
+
+.button-dn:hover::before,
+.button-dk:hover::before {
+  width: 105%; /* Thay đổi kích thước của before khi hover */
+}
+.form-dn p,
 .form-dk p {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 16px;
   margin: 0px 0;
 }
-/*  nút google và mail */
-.nho-quen .btn-dk {
+.other-options .btn-dn,
+.other-options .btn-dk {
   margin-top: 10px;
   width: 100%;
   height: 50px;
@@ -113,35 +152,32 @@
   font-size: 20px;
   gap: 10px;
   border: 1px solid #d1ff05;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0017e9 0%, #1e79f0 100%);
- 
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0096f4 0%, #00adfe 100%);
   cursor: pointer;
   transition: 0.7s ease-out;
-  /* background: transparent; */
   position: relative;
   overflow: hidden;
 }
-.nho-quen .btn-dk span{
+.other-options .btn-dn span,
+.other-options .btn-dk span {
   z-index: 2;
 }
-.nho-quen .btn-dk::before {
+.other-options .btn-dn::before,
+.other-options .btn-dk::before {
+  content: "";
+  width: 0;
+  height: 400%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: '';
-  border-radius: 50%;
-  width: 320px;
-  height: 320px;
-  left: -80px;
-  text-align: center;
-  transition: box-shadow 0.3s ease-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: linear-gradient(#17c3b2, #a6f0f7);
+  transition: 0.5s ease;
+  display: block;
+  z-index: 1;
 }
-
-
-.nho-quen .btn-dk:hover::before {
-  box-shadow: inset 0 0 0 160px rgb(248, 248, 158);
+.other-options .btn-dn:hover::before,
+.other-options .btn-dk:hover::before {
+  width: 105%;
 }

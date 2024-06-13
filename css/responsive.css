@@ -1,16 +1,10 @@
 /*
  .col-(thiết bị cực nhỏ - chiều rộng màn hình nhỏ hơn 576px)
-
  .col-sm-(thiết bị nhỏ - chiều rộng màn hình bằng hoặc lớn hơn 576px)
-
  .col-md-(thiết bị trung bình - chiều rộng màn hình bằng hoặc lớn hơn 768px)
-
 .col-lg-(thiết bị lớn - chiều rộng màn hình bằng hoặc lớn hơn 992px)
-
 .col-xl-(thiết bị xlarge - chiều rộng màn hình bằng hoặc lớn hơn 1200px)
-
   .col-xxl-(thiết bị xxlarge - chiều rộng màn hình bằng hoặc lớn hơn 1400px) */
-
 /* pc @media (min-width: 1024px)*/
 /* tablet  (min-width: 740px) and (max-width: 1023)*/
 /* điện thoại max-width: 739px */
@@ -50,6 +44,26 @@
   }
   .site-title .box-note h1 {
     font-size: 60px;
+  }
+  /* KHÓA HỌC */
+  .CardImgKh {
+    height: 200px;
+  }
+  /* video */
+  .title-video h4{
+    font-size: 18px;
+  }
+  .title-video p {
+    font-size: 14px;
+  }
+  /* .rate {
+    columns: 2;
+  } */
+  .video-content {
+    flex-direction: column;
+  }
+  .rate {
+   justify-content: space-around;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -106,6 +120,19 @@
   }
   .site-title .title-text2::before {
     width: 100px;
+  }
+  /* video */
+  .title-video h4{
+    font-size: 18px;
+  }
+  .title-video p {
+    font-size: 13px;
+  }
+  .video-content {
+    flex-direction: column;
+  }
+  .rate {
+   justify-content: space-around;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -173,6 +200,22 @@
   .CardBodyNews2 p {
     -webkit-line-clamp: 4;
   }
+  /* phần videos */
+  .video-content {
+    flex-direction: column;
+  }
+  .rate {
+   justify-content: space-around;
+  }
+  .video-img {
+    width: 50%;
+  }
+  .title-video h4{
+    font-size: 25px;
+  }
+  .title-video p {
+    font-size: 20px;
+  }
 }
 /* super nhỏ */
 /* @media (min-width: 320px) and (max-width: 575px)  */
@@ -231,9 +274,26 @@
   .site-title .title-text2::before {
     width: 100px;
   }
+  /* teacher */
+  /* giới thiệu */
+
+  .infor-teacher h2 {
+    font-size: 30px;
+  }
+  .sub-title {
+    font-size: 40px;
+  }
+
   /* mấy cái tiêu đề */
   .title {
     font-size: 40px;
+  }
+  /*  */
+  .CardImgKh {
+    height: 300px;
+  }
+  .page123 {
+    display: none;
   }
   /*  tin tức */
   .CardType2 .CardImgNews2 .NewsImg2 {
@@ -241,5 +301,36 @@
   }
   .CardBodyNews2 p {
     -webkit-line-clamp: 3;
+  }
+  /* footer */
+  .author {
+    font-size: 16px;
+  }
+  /* 
+  form đăng kí đăng nhập
+  */
+  .form-dn,
+  .form-dk {
+    width: 80%;
+    padding: 10px;
+  }
+  .password-row {
+    flex-direction: column;
+  }
+  .password-column {
+    width: 100%;
+  }
+  /* video */
+  .video-content {
+    flex-direction: column;
+  }
+  .rate {
+   justify-content: space-around;
+  }
+  .rate button {
+    font-size: 12px;
+  }
+  .my-comment .cmt-icon{
+    display: none;
   }
 }

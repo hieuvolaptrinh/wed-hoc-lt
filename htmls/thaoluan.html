@@ -15,27 +15,17 @@
       href="https://fonts.go1ogleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- logo  -->
     <link rel="shortcut icon" href="../img/lo.png" />
-    <!-- tabler icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-
-    <!-- link boostrap vào để làm cho nhanh với lại là responsivie cho nó khỏe -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <!-- animate -->
     <link
       rel="stylesheet"
@@ -101,8 +91,11 @@
               <!-- ata-bs-toggle="dropdown" để có thể ấn vào nó hiện xuống -->
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="https://www.facebook.com/HieuVo.trumut"
-                    target="_blank">facebook
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/HieuVo.trumut"
+                    target="_blank"
+                    >facebook
                     <i
                       class="fa-brands fa-square-facebook fa-beat fa-xl"
                       style="color: #052cf0"
@@ -110,8 +103,11 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="https://www.youtube.com/channel/UCUsFH934fJws3QvETm8-i-A"
-                    target="_blank">youtube
+                  <a
+                    class="dropdown-item"
+                    href="https://www.youtube.com/channel/UCUsFH934fJws3QvETm8-i-A"
+                    target="_blank"
+                    >youtube
                     <i
                       class="fa-brands fa-youtube fa-beat fa-xl"
                       style="color: #ff0000"
@@ -119,7 +115,9 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="https://www.facebook.com/HieuVo.trumut"
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/HieuVo.trumut"
                     >instagram
                     <i
                       class="fa-brands fa-square-instagram fa-rotate-180 fa-xl fa-beat"
@@ -131,10 +129,10 @@
             </li>
           </ul>
           <form class="form d-flex">
-            <button class="btn btn-dk btn-primary me-2 js-dk" type="button">
+            <button class="btn btn-primary me-2" id="js-dk" type="button">
               ĐĂNG KÍ
             </button>
-            <button class="btn btn-dn btn-primary me-2 js-dk" type="button">
+            <button class="btn btn-primary me-2" id="js-dn" type="button">
               ĐĂNG NHẬP
             </button>
           </form>
@@ -146,7 +144,7 @@
         <div id="slide">
           <div class="item">
             <video autoplay muted loop class="bg-video">
-              <source src="../videos/slider-2.mp4" type="video/mp4" />
+              <source src="../media/slider-2.mp4" type="video/mp4" />
             </video>
             <div class="content">
               <h2 class="name">LẬP TRÌNH TƯƠNG LAI</h2>
@@ -156,7 +154,7 @@
           <!--  -->
           <div class="item">
             <video autoplay muted loop class="bg-video">
-              <source src="../videos/slider-internet.mp4" type="video/mp4" />
+              <source src="../media/slider-internet.mp4" type="video/mp4" />
             </video>
             <div class="content">
               <h2 class="name">KẾT NỐI CỘNG ĐỒNG</h2>
@@ -167,7 +165,7 @@
           <!--  -->
           <div class="item">
             <video autoplay muted loop class="bg-video">
-              <source src="../videos/slide-1.mp4" type="video/mp4" />
+              <source src="../media/slide-1.mp4" type="video/mp4" />
             </video>
             <div class="content">
               <h2 class="name">CHIA SẼ KIẾN THỨC</h2>
@@ -180,7 +178,7 @@
           <!--  -->
           <div class="item">
             <video autoplay muted loop class="bg-video">
-              <source src="../videos/slider-3.mp4" type="video/mp4" />
+              <source src="../media/slider-3.mp4" type="video/mp4" />
             </video>
             <div class="content">
               <h2 class="name">KẾT NỐI CỘNG ĐỒNG</h2>
@@ -190,10 +188,10 @@
           <!--  -->
           <div class="item">
             <video autoplay muted loop class="bg-video">
-              <source src="../videos/slider-time.mp4" type="video/mp4" />
+              <source src="../media/slider-time.mp4" type="video/mp4" />
             </video>
             <div class="content">
-              <h2 class="name">KẾT NỐI CỘNG ĐỒNG</h2>
+              <h2 class="name">HỌC TẬP MỖI NGÀY</h2>
               <p class="des">"Thành công không đến với kẻ lười biến"</p>
             </div>
           </div>
@@ -209,8 +207,7 @@
         </div>
       </div>
     </header>
-
-    <div class="language">
+    <div class="language animate__zoomInDown animate__animated">
       <div class="container mt-2">
         <div class="row">
           <div class="col-lg-1 col-md-2 col-sm-3 col-4 mb-5">
@@ -252,9 +249,50 @@
         </div>
       </div>
     </div>
-
     <div class="line1"></div>
-
+    <section class="infor-teacher">
+      <div class="container">
+        <div
+          class="sub-style"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+        >
+          <h1
+            class="sub-title px-3 uppercase"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="1000"
+          >
+            code club
+          </h1>
+        </div>
+        <h2
+          class="mb-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
+          hệ thống giáo dục với xứ mệnh to lớn
+        </h2>
+        <p
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos="flip-right"
+        >
+          Tại Code Club, chúng tôi tin rằng lập trình không chỉ là một kỹ năng,
+          mà còn là cánh cửa mở ra một thế giới đầy tiềm năng. Dù bạn là người
+          mới bắt đầu hay một lập trình viên kinh nghiệm, chương trình giảng dạy
+          toàn diện và các khóa học do chuyên gia dẫn dắt sẽ dẫn bạn vào một
+          chặng đường biến đổi. Các khóa học của chúng tôi bao gồm nhiều ngôn
+          ngữ lập trình và khuôn khổ khác nhau, như Python, Java, JavaScript và
+          nhiều hơn thế. Thông qua các bài học tương tác, các dự án thực hành và
+          các nghiên cứu tình huống thực tế, học viên của chúng tôi sẽ có được
+          kinh nghiệm thực tiễn và sự tự tin để vượt qua những thách thức phức
+          tạp.
+        </p>
+      </div>
+    </section>
     <!-- thảo luận -->
     <section class="comment">
       <div class="container">
@@ -539,10 +577,101 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container-fluid footer mt-5">
+        <div class="row m-0 ps-5 pe-5">
+          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12 mt-5">
+            <div class="box1">
+              <h2>liên hệ</h2>
 
-    <!-- đăng nhập đăng kí  -->
-    <section class="wrapper-dk js-wrapper-dk">
-      <form class="form-dk js-form-dk">
+              <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
+
+              <a class="footer-items" href="#"
+                ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
+                vndhieuak@gmail.com</a
+              >
+
+              <a class="footer-items" href="#"
+                ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12 mt-5">
+            <div class="box2">
+              <h2>group</h2>
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-facebook-f"></i> facebook</a
+              >
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-twitter"></i> twitter</a
+              >
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-instagram"></i> instagram</a
+              >
+
+              <a class="footer-items" href="#"
+                ><i class="fab fa-youtube"></i> youtube</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mt-5">
+            <h2>Địa chỉ</h2>
+            <div class="wrapper-map">
+              <iframe
+                class="gg-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7715033490863!2d108.21084937491717!3d16.077342784603367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184792140755%3A0xd4058cb259787dac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgdGh14bqtdCAtIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1715849086904!5m2!1svi!2s"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 mt-5">
+            <h2>phản hồi</h2>
+            <div class="box3">
+              <p>
+                Hãy gửi phản hồi cho chúng tôi để hoàn thiện trang wed trong
+                khoản thời gian sớm nhất bạn nhé
+              </p>
+
+              <form action="">
+                <div class="mess">
+                  <label for="mess">TIN NHẮN</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="mess"
+                    placeholder="Nhập lời nhắn...."
+                    required
+                  />
+                </div>
+                <div class="email">
+                  <label for="mail">Email</label>
+                  <input
+                    type="email"
+                    name=""
+                    id="mail"
+                    placeholder="Email phản hồi...."
+                    required
+                  />
+                </div>
+                <div class="footer-btn">
+                  <input type="submit" value="gửi" />
+                  <input type="reset" value="xóa" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div><p class="author mt-2">Thiết kế bởi: HIẾU VÕ</p></div>
+        </div>
+      </div>
+    </footer>
+    <section class="wrapper-dn js-wrapper-dn">
+      <form class="form-dn js-form-dn">
         <label for="nhapmail">Email </label>
         <input
           type="text"
@@ -558,26 +687,27 @@
           placeholder="Nhập mật khẩu"
         />
 
-        <div class="nho-quen">
+        <div class="other-options">
           <div>
             <input type="checkbox" />
             <span>Nhớ mật khẩu </span>
           </div>
-          <a href="#" class="dkdn">Quên mật khẩu?</a>
+          <a href="#" class="remember">Quên mật khẩu?</a>
         </div>
-        <button class="button-dk">Đăng Nhập</button>
+        <button class="button-dn"><span>Đăng Nhập</span></button>
         <p>
           Bạn không có tài khoản ư ? <a href="#" class="dkdn">Đăng Kí Ngay</a>
         </p>
         <p>Hoặc với</p>
 
-        <div class="nho-quen">
-          <button class="btn-dk">
+        <div class="other-options">
+          <button class="btn-dn">
             <span
-              ><i class="fa-brands fa-google" style="color: #000000"> </i>
+              ><i class="fa-brands fa-google" style="color: #000000"></i>
               Google</span
-            ></button
-          ><button class="btn-dk">
+            >
+          </button>
+          <button class="btn-dn">
             <span
               ><i class="fa-solid fa-envelope" style="color: #000000"></i>
               Mail</span
@@ -586,103 +716,70 @@
         </div>
       </form>
     </section>
-    <!-- footer -->
-
-    <footer>
-      <div class="footer mt-5">
-        <div class="container-">
-          <div class="row m-0 ps-5 pe-5">
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 mt-5">
-              <div class="box1">
-                <h2>liên hệ</h2>
-
-                <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
-
-                <a class="footer-items" href="#"
-                  ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
-                  vndhieuak@gmail.com</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
-                >
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 mt-5">
-              <div class="box2">
-                <h2>group</h2>
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-facebook-f"></i> facebook</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-twitter"></i> twitter</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-instagram"></i> instagram</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-youtube"></i> youtube</a
-                >
-              </div>
-            </div>
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12 mt-5">
-              <h2>Địa chỉ</h2>
-              <div class="wrapper-map">
-                <iframe
-                  class="gg-map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7715033490863!2d108.21084937491717!3d16.077342784603367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184792140755%3A0xd4058cb259787dac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgdGh14bqtdCAtIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1715849086904!5m2!1svi!2s"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 mt-5">
-              <h2>phản hồi</h2>
-              <div class="box3">
-                <p>
-                  Hãy gửi phản hồi cho chúng tôi để hoàn thiện trang wed trong
-                  khoản thời gian sớm nhất bạn nhé
-                </p>
-
-                <form action="">
-                  <div class="mess">
-                    <label for="mess">TIN NHẮN</label>
-                    <input
-                      type="text"
-                      name=""
-                      id="mess"
-                      placeholder="Nhập lời nhắn...."
-                      required
-                    />
-                  </div>
-                  <div class="email">
-                    <label for="mail">Email</label>
-                    <input
-                      type="email"
-                      name=""
-                      id="mail"
-                      placeholder="Email phản hồi...."
-                      required
-                    />
-                  </div>
-                  <div class="footer-btn">
-                    <input type="submit" value="gửi" />
-                    <input type="reset" value="xóa" />
-                  </div>
-                </form>
-              </div>
-            </div>
-            <p class="author mt-2">Thiết kế bởi: HIẾU VÕ</p>
+    <section class="wrapper-dk js-wrapper-dk">
+      <form class="form-dk js-form-dk">
+        <label for="dk-email">Email </label>
+        <input
+          type="text"
+          id="dk-email"
+          class="inputForm"
+          placeholder="Nhập email"
+        />
+        <label for="dk-username">Username </label>
+        <input
+          type="text"
+          id="dk-username"
+          class="inputForm"
+          placeholder="Nhập username"
+        />
+        <div class="password-row">
+          <div class="password-column">
+            <label for="dk-pass">Password </label>
+            <input
+              type="password"
+              id="dk-pass"
+              class="inputForm"
+              placeholder="Nhập mật khẩu"
+            />
+          </div>
+          <div class="password-column">
+            <label for="dk-pass-confirm">Nhập Lại Password </label>
+            <input
+              type="password"
+              id="dk-pass-confirm"
+              class="inputForm"
+              placeholder="Xác nhận mật khẩu"
+            />
           </div>
         </div>
-      </div>
-    </footer>
+        <button class="button-dk"><span>Đăng Ký</span></button>
+        <p>Bạn đã có tài khoản? <a href="#" class="dkdn">Đăng Nhập</a></p>
+        <p>Hoặc với</p>
+
+        <div class="other-options">
+          <button class="btn-dk">
+            <span
+              ><i class="fa-brands fa-google" style="color: #000000"></i>
+              Google</span
+            >
+          </button>
+          <button class="btn-dk">
+            <span
+              ><i class="fa-solid fa-envelope" style="color: #000000"></i>
+              Mail</span
+            >
+          </button>
+        </div>
+      </form>
+    </section>
+    <canvas id="canvas"></canvas>
+    <div id="load"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/mouse.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

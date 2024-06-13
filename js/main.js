@@ -1,57 +1,85 @@
-// hiện phần đăng nhập và đăng kí zooo
-let btnDks = document.querySelectorAll(".js-dk");
-let form = document.querySelector(".js-form-dk");
-let formDk = document.querySelector(".js-wrapper-dk");
-function show() {
-  formDk.classList.add("open");
+let btnDk = document.getElementById("js-dk");
+let btnDn = document.getElementById("js-dn");
+let formDn = document.querySelector(".js-form-dn");
+let formDk = document.querySelector(".js-form-dk");
+let wrapperDn = document.querySelector(".js-wrapper-dn");
+let wrapperDk = document.querySelector(".js-wrapper-dk");
+function showDn() {
+  wrapperDn.classList.add("open");
 }
-for (let btnDK of btnDks) {
-  btnDK.addEventListener("click", show);
+function showDk() {
+  wrapperDk.classList.add("open");
 }
-// ấn ra ngoài để nó close form
-function close() {
-  formDk.classList.remove("open");
+btnDn.addEventListener("click", showDn);
+btnDk.addEventListener("click", showDk);
+// Ấn ra ngoài để đóng form
+function closeDn() {
+  wrapperDn.classList.remove("open");
 }
-
-// ấn ngoài là sẽ tắt mà phải trừ ra nữa chứ ấn bên trong nó cũng xóa mất (xóa nổi bọt đi)
-formDk.addEventListener("click", close);
-
-// hàm xóa nổi bọt đi để nó ăn đoạn bên ngoài thôi
-// ngừng từ thằng modal container trờ vào
-form.addEventListener("click", function (event) {
+function closeDk() {
+  wrapperDk.classList.remove("open");
+}
+// Ngăn chặn sự kiện nổi bọt khi nhấp vào bên trong form
+formDn.addEventListener("click", function (event) {
+  event.stopPropagation(); //event.stopPropagation():  ngăn chặn sự kiện "click" tiếp tục lan truyền lên các phần tử cha của phần tử hiện tại.
+});
+formDk.addEventListener("click", function (event) {
   event.stopPropagation();
-}); //event.stopPropagation():  ngăn chặn sự kiện "click" tiếp tục lan truyền lên các phần tử cha của phần tử hiện tại. 
-// Điều này có nghĩa là nếu có bất kỳ phần tử cha nào của form cũng có một sự kiện lắng nghe "click", sự kiện này sẽ không được kích hoạt.
+});
 
-// end
+// Ấn ra ngoài form để đóng form
+wrapperDn.addEventListener("click", closeDn);
+wrapperDk.addEventListener("click", closeDk);
 //  phần chữ chạy qua lại
-const titles = document.querySelectorAll(".note-title");
+let titles = document.querySelectorAll(".note-title");
 function loadtext() {
   titles.forEach(function (title) {
     const text = title.textContent;
     title.textContent = ""; // gắn nội dung trống sau đó mình thêm từng chữ vào
-
     let index = 0;
     let intervalId;
-
     function typeEffect() {
       intervalId = setInterval(function () {
-        title.textContent += text[index]; // thêm từng ký tự một vào tiêu đề
+        title.textContent = title.textContent + text[index]; // thêm từng ký tự một vào tiêu đề
         index++;
         if (index >= text.length) {
-          clearInterval(intervalId); // Dừng interval khi đã thêm hết các ký tự
+          clearInterval(intervalId); // dừng interval khi đã thêm hết các ký tự
           setTimeout(function () {
-            title.textContent = ""; // Xóa nội dung của tiêu đề
+            title.textContent = "";
             index = 0;
-            typeEffect(); // Gọi lại hàm để bắt đầu lại từ đầu
-          }, 3000); // Delay 3s
+            typeEffect(); // gọi lại hàm để bắt đầu lại từ đầu
+          }, 3000);
         }
       }, 100);
     }
-
-    typeEffect(); // Bắt đầu chạy hiệu ứng gõ chữ
+    typeEffect();
   });
 }
-
 document.addEventListener("DOMContentLoaded", loadtext);
-// Chạy script sau khi trang web đã tải xong
+//  web  tải xong => chạy
+
+// load trang
+let loadElement = document.getElementById("load");
+window.onload = function () {
+  // setTimeout(function () {
+  //   loadElement.style.display = "none";
+  // }, 1000);
+  loadElement.style.display = "none";
+};
+// like,dislike
+
+const likeButton = document.querySelector(".like");
+const dislikeButton = document.querySelector(".dislike");
+
+likeButton.addEventListener("click", toggleLike);
+dislikeButton.addEventListener("click", toggleDislike);
+
+function toggleLike() {
+  likeButton.classList.toggle("active");
+  dislikeButton.classList.remove("active");
+}
+function toggleDislike() {
+  dislikeButton.classList.toggle("active");
+
+  likeButton.classList.remove("active");
+}
