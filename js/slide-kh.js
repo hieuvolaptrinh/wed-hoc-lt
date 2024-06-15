@@ -11,7 +11,7 @@ next.onclick = function () {
   let lists = document.querySelectorAll(".item");
   document.getElementById("slide").appendChild(lists[0]);
   // appendChild  thêm  (node) vào cuối danh sách các con của một nút cha đã chỉ định.
-  // lấy item đầu bỏ vào sau để dẩy phần tử thứ 2 ra trước
+
 };
 prev.onclick = function () {
   clearInterval(refreshSlider); 

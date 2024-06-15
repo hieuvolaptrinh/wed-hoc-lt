@@ -21,7 +21,7 @@ function closeDk() {
 }
 // Ngăn chặn sự kiện nổi bọt khi nhấp vào bên trong form
 formDn.addEventListener("click", function (event) {
-  event.stopPropagation(); //event.stopPropagation():  ngăn chặn sự kiện "click" tiếp tục lan truyền lên các phần tử cha của phần tử hiện tại.
+  event.stopPropagation(); // ngăn chặn sự kiện "click" tiếp tục lan truyền lên các phần tử cha của phần tử hiện tại.
 });
 formDk.addEventListener("click", function (event) {
   event.stopPropagation();
@@ -40,7 +40,7 @@ function loadtext() {
     let intervalId;
     function typeEffect() {
       intervalId = setInterval(function () {
-        title.textContent = title.textContent + text[index]; // thêm từng ký tự một vào tiêu đề
+        title.textContent = title.textContent + text[index]; 
         index++;
         if (index >= text.length) {
           clearInterval(intervalId); // dừng interval khi đã thêm hết các ký tự
@@ -66,20 +66,17 @@ window.onload = function () {
   // }, 1000);
   loadElement.style.display = "none";
 };
+
 // like,dislike
-
-const likeButton = document.querySelector(".like");
-const dislikeButton = document.querySelector(".dislike");
-
+let likeButton = document.querySelector(".like");
+let dislikeButton = document.querySelector(".dislike");
 likeButton.addEventListener("click", toggleLike);
 dislikeButton.addEventListener("click", toggleDislike);
-
 function toggleLike() {
   likeButton.classList.toggle("active");
   dislikeButton.classList.remove("active");
 }
 function toggleDislike() {
   dislikeButton.classList.toggle("active");
-
   likeButton.classList.remove("active");
 }

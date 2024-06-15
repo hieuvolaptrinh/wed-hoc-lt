@@ -63,7 +63,6 @@ form #js-dn {
   margin-left: 20px;
   background: rgb(255, 0, 238);
   display: inline-block;
-
   /* canh theo chiều y */
   transform: translateY(-5px);
   /* animation */
@@ -78,7 +77,6 @@ form #js-dn {
   margin-right: 20px;
   background: rgb(255, 0, 238);
   display: inline-block;
-
   /* canh theo chiều y */
   transform: translateY(-5px);
 }
@@ -139,17 +137,9 @@ form #js-dn {
 /* end line 1 */
 
 /* <<<<<<<<<<<<<<<< begin nav and slider>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-/* .container-fluid {
-  padding: 0 !important;
-  margin: 0 !important;
-} */
 .container {
   overflow: hidden;
   padding: 10px 25px;
-}
-.slide {
-  background-attachment: fixed;
 }
 .logo {
   width: 70px;
@@ -157,7 +147,7 @@ form #js-dn {
 
 .navbar {
   text-transform: uppercase;
-  padding: 0 0 0 0;
+  padding: 0;
   background-color: #0296ef;
   background-image: linear-gradient(
     45deg,
@@ -214,16 +204,13 @@ form #js-dn {
   position: absolute;
   transition: all 0.3s linear;
 }
-.nav-item:hover::after {
-  width: 100%;
-}
+.nav-item:hover::after,
 .nav-item:hover::before {
   width: 100%;
 }
 .nav-item:hover .nav-link {
   color: rgb(255, 255, 255);
 }
-
 /* nút tìm kiếm */
 .form-search input {
   padding-left: 10px;
@@ -283,7 +270,7 @@ header {
   top: 50%;
   transform: translate(0, -50%);
   border-radius: 20px;
-  box-shadow: rgba(123, 123, 121, 0.292) -5px 5px 10px 5px;
+  box-shadow:  -5px 5px 10px 5px rgba(123, 123, 121, 0.292);
 }
 .wrapper-slider .item:nth-child(2) {
   left: 0;
@@ -322,7 +309,7 @@ header {
   animation: show-content 1s ease-in-out 1 forwards;
   opacity: 0;
   text-shadow: -4px 2px 5px rgb(0, 0, 0);
-  color: #0077ff;
+  color: #00a6ff;
   /* chạy 1 lần và forwards : giữ lại trạng thái cuối (k lặp lại đó)  */
 }
 .wrapper-slider .item .des {
@@ -379,7 +366,6 @@ header {
   /* vô hạn */
   /* animation-iteration-count: infinite; */
   /* animation-direction: alternate; */
-
   animation: xoay 2s infinite alternate;
 }
 @keyframes xoay {
@@ -994,7 +980,7 @@ page
 }
 .pin-news {
   position: absolute;
-  clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: (100% 0, 0 0, 0 100%);
   display: flex;
   justify-content: center;
 }
@@ -1352,6 +1338,7 @@ a {
 }
 
 /* footer */
+
 .footer {
   background-image: linear-gradient(
     45deg,
@@ -1367,14 +1354,19 @@ a {
   text-transform: capitalize;
 }
 .footer h2 {
-  font: 700 25px "Times New Roman", Times, serif;
+  font: 700 30px "Times New Roman", Times, serif;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .box3 p {
   font-size: 20px;
   text-align: justify;
+}
+#box1-title a,
+#box2-title a {
+  letter-spacing: 2px;
 }
 .box3 form {
   display: block;
@@ -1392,10 +1384,10 @@ a {
 }
 .author {
   text-align: center;
-  font: 700 25px "chudepdam";
+  font: 700 30px "chudepdam";
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   background-image: linear-gradient(
     225deg,
     #0027ec 0%,

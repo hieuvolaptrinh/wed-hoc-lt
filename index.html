@@ -3,12 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/logo/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/logo/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/logo/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/logo/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/logo/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/logo/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/logo/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/logo/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/logo/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/logo/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/logo/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/logo/favicon-16x16.png"
+    />
     <!-- reset css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="shortcut icon" href="img/lo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -34,13 +102,13 @@
   <body>
     <nav class="navbar navbar-expand-xl sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href=""
+        <a class="navbar-brand" href="#"
           ><img class="logo" src="img/lo.png" alt=""
         /></a>
 
         <!-- sử dụng để reponsive kéo ngắn lại -->
         <button
-          class="navbar-toggler mf-auto"
+          class="navbar-toggler "
           data-bs-toggle="collapse"
           data-bs-target="#open"
         >
@@ -49,7 +117,7 @@
         <!-- kết hợp hai class "collapse" và "navbar-collapse" lại với nhau, phần tử sẽ có khả năng thu gọn và mở rộng, 
                 cũng như định dạng phù hợp với giao diện của thanh điều hướng (navbar) trong Bootstrap. -->
 
-        <div class="collapse navbar-collapse" id="open">
+        <div class="collapse navbar-collapse nav-responsive" id="open">
           <ul class="navbar-nav me-auto">
             <!-- class nav-link để nó cách ra các điều hướng -->
             <li class="nav-item">
@@ -643,34 +711,31 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">C++</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 50 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          >
-                          </i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 50 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i class="fa-solid fa-star fa-" style="color: #ffe100">
+                        </i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
+
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -707,32 +772,31 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">BOOTSTRAP</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i>
+                      </p>
                     </div>
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
@@ -767,32 +831,31 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">HTML/CSS</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 234 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 234 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
@@ -830,33 +893,33 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">JAVA</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
+
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -898,33 +961,29 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">ANGULAR</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          >
-                          </i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i class="fa-solid fa-star fa-" style="color: #ffe100">
+                        </i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
@@ -962,32 +1021,31 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">VUE JS</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffffff"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffffff"
+                        ></i>
+                      </p>
                     </div>
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
@@ -1025,32 +1083,31 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">NEST JS</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 120 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffffff"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 120 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffffff"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
@@ -1088,33 +1145,33 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">TYPESCRIPT</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
+
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1155,8 +1212,8 @@
                     />
                   </div>
                   <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">PHYTHON</h3>
-                    <div>
+                    <h3 class="card-title CardTitleKh">PYTHON</h3>
+                    
                       <div class="value">
                         <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                         <p>
@@ -1183,7 +1240,7 @@
                           ></i>
                         </p>
                       </div>
-                    </div>
+                    
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1220,7 +1277,7 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">UNITY</h3>
-                    <div>
+                    
                       <div class="value">
                         <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
                         <p>
@@ -1246,7 +1303,7 @@
                           ></i>
                         </p>
                       </div>
-                    </div>
+                   
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1280,7 +1337,7 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">.NET</h3>
-                    <div>
+                   
                       <div class="value">
                         <p><i class="fas fa-clock fa-lg"></i> : 120 bài học</p>
                         <p>
@@ -1306,7 +1363,7 @@
                           ></i>
                         </p>
                       </div>
-                    </div>
+                    
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1343,7 +1400,7 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">SWIFT</h3>
-                    <div>
+                   
                       <div class="value">
                         <p><i class="fas fa-clock fa-lg"></i> : 99 bài học</p>
                         <p>
@@ -1369,7 +1426,7 @@
                           ></i>
                         </p>
                       </div>
-                    </div>
+                   
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1411,33 +1468,33 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">RUBY</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
+
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1471,33 +1528,33 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">REACTJS</h3>
-                    <div>
-                      <div class="value">
-                        <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
-                        <p>
-                          Đánh Giá :<i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #ffe100"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i
-                          ><i
-                            class="fa-solid fa-star fa-"
-                            style="color: #f7f7f7"
-                          ></i>
-                        </p>
-                      </div>
+
+                    <div class="value">
+                      <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
+                      <p>
+                        Đánh Giá :<i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #ffe100"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i
+                        ><i
+                          class="fa-solid fa-star fa-"
+                          style="color: #f7f7f7"
+                        ></i>
+                      </p>
                     </div>
+
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1534,7 +1591,7 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">MOBILE APP</h3>
-                    <div>
+                  
                       <div class="value">
                         <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                         <p>
@@ -1560,7 +1617,7 @@
                           ></i>
                         </p>
                       </div>
-                    </div>
+                   
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1597,7 +1654,7 @@
                   </div>
                   <div class="card-body CardBodyKH">
                     <h3 class="card-title CardTitleKh">PHP</h3>
-                    <div>
+                    
                       <div class="value">
                         <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                         <p>
@@ -1623,7 +1680,7 @@
                           ></i>
                         </p>
                       </div>
-                    </div>
+                   
                     <div class="d-flex">
                       <a href="htmls/videos.html" class="btn LearnBtn"
                         >HỌC MIỄN PHÍ</a
@@ -1788,44 +1845,48 @@
     <footer>
       <div class="container-fluid footer mt-5">
         <div class="row m-0 ps-5 pe-5">
-          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12 mt-5">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-5">
             <div class="box1">
               <h2>liên hệ</h2>
 
-              <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
+              <div id="box1-title">
+                <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
 
-              <a class="footer-items" href="#"
-                ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
-                vndhieuak@gmail.com</a
-              >
+                <a class="footer-items" href="#"
+                  ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
+                  vndhieuak@gmail.com</a
+                >
 
-              <a class="footer-items" href="#"
-                ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
-              >
+                <a class="footer-items" href="#"
+                  ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
+                >
+              </div>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12 mt-5">
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 mt-5">
             <div class="box2">
               <h2>group</h2>
 
-              <a class="footer-items" href="#"
-                ><i class="fab fa-facebook-f"></i> facebook</a
-              >
+              <div id="box2-title">
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-facebook-f"></i> facebook</a
+                >
 
-              <a class="footer-items" href="#"
-                ><i class="fab fa-twitter"></i> twitter</a
-              >
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-twitter"></i> twitter</a
+                >
 
-              <a class="footer-items" href="#"
-                ><i class="fab fa-instagram"></i> instagram</a
-              >
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-instagram"></i> instagram</a
+                >
 
-              <a class="footer-items" href="#"
-                ><i class="fab fa-youtube"></i> youtube</a
-              >
+                <a class="footer-items" href="#"
+                  ><i class="fab fa-youtube"></i> youtube</a
+                >
+              </div>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mt-5">
+          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
             <h2>Địa chỉ</h2>
             <div class="wrapper-map">
               <iframe
@@ -1838,7 +1899,7 @@
               ></iframe>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 mt-5">
+          <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
             <h2>phản hồi</h2>
             <div class="box3">
               <p>

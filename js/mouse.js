@@ -80,7 +80,6 @@ class Ball {
     if (this.size > 0) {
       let s = this.size - 0.1;
       this.size = s <= 0 ? 0 : s;
-      // để kích thước nó bằng không lại chứ nếu trừ mãi nó âm, âm thì mất mất hình tròn :))
     }
   }
 }
