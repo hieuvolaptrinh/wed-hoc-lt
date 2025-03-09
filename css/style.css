@@ -270,7 +270,7 @@ header {
   top: 50%;
   transform: translate(0, -50%);
   border-radius: 20px;
-  box-shadow:  -5px 5px 10px 5px rgba(123, 123, 121, 0.292);
+  box-shadow: -5px 5px 10px 5px rgba(123, 123, 121, 0.292);
 }
 .wrapper-slider .item:nth-child(2) {
   left: 0;
@@ -727,7 +727,7 @@ header {
   clip-path: polygon(99% 0, 100% 75%, 53% 100%, 0 75%, 0 0);
 }
 .wrapper .pin-new {
-  clip-path: polygon(100% 0, 99% 100%, 50% 75%, 0 100%, 0 0);
+  clip-path: polygon(99% 0, 100% 75%, 53% 100%, 0 75%, 0 0);
   background-image: linear-gradient(0deg, #02ff41 0%, #009405 100%);
 }
 .wrapper .pin-trend {
@@ -991,16 +991,19 @@ page
   color: white;
 }
 .CardType1 .pin-news {
+  clip-path: polygon(100% 0, 0 0, 0 100%);  
   width: 80px;
   height: 80px;
   background-image: linear-gradient(0deg, #d25800 0%, #c62a2a 100%);
 }
 .CardType2 .pin-news {
+  clip-path: polygon(100% 0, 0 0, 0 100%);
   width: 50px;
   height: 50px;
   background-image: linear-gradient(0deg, #c8d200 0%, #2fff00 100%);
 }
 .CardType3 .pin-news {
+  clip-path: polygon(100% 0, 0 0, 0 100%);
   width: 50px;
   height: 50px;
   background-image: linear-gradient(0deg, #d25800 0%, #c62a2a 100%);
@@ -1020,6 +1023,7 @@ page
 }
 /* loại 4 có 2 cái pin */
 .CardType4 .pin-news {
+  clip-path: polygon(100% 0, 0 0, 0 100%);
   width: 80px;
   height: 80px;
   background-image: linear-gradient(0deg, #d25800 0%, #c62a2a 100%);
@@ -1457,6 +1461,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+  /* pointer-events: none; */
 }
 /*  ghi đè phần nav */
 .navbar {

@@ -19,15 +19,13 @@ function closeDn() {
 function closeDk() {
   wrapperDk.classList.remove("open");
 }
-// Ngăn chặn sự kiện nổi bọt khi nhấp vào bên trong form
+// nổi bọt
 formDn.addEventListener("click", function (event) {
   event.stopPropagation(); // ngăn chặn sự kiện "click" tiếp tục lan truyền lên các phần tử cha của phần tử hiện tại.
 });
 formDk.addEventListener("click", function (event) {
   event.stopPropagation();
 });
-
-// Ấn ra ngoài form để đóng form
 wrapperDn.addEventListener("click", closeDn);
 wrapperDk.addEventListener("click", closeDk);
 //  phần chữ chạy qua lại

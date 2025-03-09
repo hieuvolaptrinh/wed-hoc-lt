@@ -1,6 +1,5 @@
 let canvas = document.querySelector("#canvas");
 let ctx = canvas.getContext("2d"); //phương thức gắn trong canvas để vẽ hình lên nó (2D)
-
 let w,
   h,
   balls = [];
@@ -21,7 +20,7 @@ let rbg = [
 ];
 function init() {
   resizeReset(); // thiết lập kích thước
-  animationLoop(); // bắt đầu vòng lặp hoạt ảnh.
+  animationLoop();
 }
 function resizeReset() {
   w = canvas.width = window.innerWidth;
@@ -51,18 +50,13 @@ function mouseMove(e) {
   mouse.x = e.clientX;
   mouse.y = e.clientY; //e  toạ độ chuột
 }
-function mouseOut() {
-  // xóa vị trí của chuột (mouse.x và mouse.y) khi chuột rời khỏi canvas.
-  // nên là mình phải để lớp phủ canvas trên toàn màn hình để khi di chuyển nó sẽ an được đầy đủ
-  mouse.x = undefined;
-  mouse.y = undefined;
-}
+
 function getRandomInt(min, max) {
   return Math.round(Math.random() * (max - min)) + min;
 }
 class Ball {
   constructor() {
-    //  class constructor cũng giống như object constructor thôi
+    //  class  cũng giống như object constructor thôi
     this.x = mouse.x + getRandomInt(-10, 10) + 10;
     this.y = mouse.y + getRandomInt(-10, 10) + 10;
     this.size = getRandomInt(0, 10);
@@ -84,8 +78,7 @@ class Ball {
   }
 }
 canvas.style.pointerEvents = "none";
-// pointer-events quy định cách thẻ HTML phản ứng với sự kiện chuột
+
 window.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", resizeReset);
 window.addEventListener("mousemove", mouseMove);
-window.addEventListener("mouseout", mouseOut);
